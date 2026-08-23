@@ -1,0 +1,21 @@
+name: Validate content contract
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 24.19.0
+      - run: node scripts/validate.mjs fixtures/minimal/manifest.json
+      - run: node --test tests/*.test.mjs
+

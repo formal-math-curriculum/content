@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://formal-math-curriculum.github.io/schemas/p5-representation-v1.json",
+  "title": "P5 representation and correspondence v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["content_id", "block_id", "latex_state", "lean_state"],
+  "properties": {
+    "content_id": { "type": "string" },
+    "block_id": { "type": "string", "pattern": "^[A-Za-z0-9._-]+$" },
+    "latex_state": { "enum": ["available", "unavailable", "invalid"] },
+    "lean_state": { "enum": ["exact", "scoped", "related", "unreviewed", "unavailable", "stale", "incompatible"] },
+    "fart_id": { "type": "string" },
+    "floc_id": { "type": "string" },
+    "flink_id": { "type": "string" },
+    "project_revision": { "type": "string", "pattern": "^[0-9a-f]{40}$" },
+    "dependency_revision": { "type": "string", "pattern": "^[0-9a-f]{40}$" }
+  }
+}
+

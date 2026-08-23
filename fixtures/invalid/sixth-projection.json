@@ -1,0 +1,17 @@
+{
+  "schema_version": "p5-content-manifest/v1",
+  "canonical_host": "https://formal-math-curriculum.github.io",
+  "content": [],
+  "routes": [],
+  "redirects": [],
+  "projections": [
+    { "key": "course", "state": "current", "default": true },
+    { "key": "ontomathpro", "state": "unavailable", "default": false },
+    { "key": "msc2020", "state": "unavailable", "default": false },
+    { "key": "arxiv", "state": "unavailable", "default": false },
+    { "key": "lean-mathlib", "state": "unavailable", "default": false },
+    { "key": "knowledge-map", "state": "current", "default": false }
+  ],
+  "external_payloads": []
+}
+
