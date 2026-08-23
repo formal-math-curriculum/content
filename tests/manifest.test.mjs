@@ -14,6 +14,24 @@ test('sixth public projection is rejected', async () => {
   assert.match((await loadAndValidate('fixtures/invalid/sixth-projection.json')).join('\n'), /exactly the five/);
 });
 
+test('missing required manifest metadata is rejected', () => {
+  const manifest = { content: [], routes: [], redirects: [], projections: [], external_payloads: [] };
+  assert.match(validateManifest(manifest).join('\n'), /unknown schema version/);
+  assert.match(validateManifest(manifest).join('\n'), /canonical host mismatch/);
+});
+
+test('incompatible or unqualified external payload is rejected', () => {
+  const manifest = {
+    schema_version: 'p5-content-manifest/v1', canonical_host: 'https://formal-math-curriculum.github.io',
+    content: [], routes: [], redirects: [],
+    projections: [
+      { key: 'course', default: true }, { key: 'ontomathpro' }, { key: 'msc2020' }, { key: 'arxiv' }, { key: 'lean-mathlib' }
+    ],
+    external_payloads: [{ system: 'msc2020', license_state: 'incompatible' }]
+  };
+  assert.match(validateManifest(manifest).join('\n'), /unqualified external payload/);
+});
+
 test('stale translation cannot enter hreflang alternates', () => {
   const manifest = {
     schema_version: 'p5-content-manifest/v1',
@@ -39,4 +57,3 @@ test('redirect lineage beyond eight edges is rejected', () => {
   };
   assert.match(validateManifest(manifest).join('\n'), /1\.\.8/);
 });
-
