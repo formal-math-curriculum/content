@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://formal-math-curriculum.github.io/schemas/p5-classification-alignment-v1.json",
+  "title": "P5 classification alignment v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["content_id", "system", "coverage_state", "snapshot_state"],
+  "properties": {
+    "content_id": { "type": "string" },
+    "system": { "enum": ["ontomathpro", "msc2020", "arxiv"] },
+    "coverage_state": { "enum": ["mapped", "partially_mapped", "unmapped", "not_applicable", "needs_review"] },
+    "relation": { "enum": ["exact", "broad", "narrow", "related"] },
+    "external_id": { "type": "string" },
+    "snapshot_state": { "enum": ["current", "stale", "unavailable", "license_needs_review", "incompatible"] }
+  }
+}
+

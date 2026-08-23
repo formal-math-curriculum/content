@@ -1,0 +1,35 @@
+{
+  "schema_version": "p5-content-manifest/v1",
+  "canonical_host": "https://formal-math-curriculum.github.io",
+  "content": [
+    {
+      "content_id": "cnt:definition:group",
+      "route_key": "grp0000001",
+      "kind": "definition",
+      "maturity": { "editorial": "reviewed", "formal": "unavailable" },
+      "locales": [
+        { "locale": "en", "slug": "group", "translation_state": "current_reviewed", "source_revision": "fixture-v1" }
+      ]
+    }
+  ],
+  "routes": [
+    {
+      "content_id": "cnt:definition:group",
+      "route_key": "grp0000001",
+      "locale": "en",
+      "path": "/content/grp0000001/group/",
+      "translation_state": "current_reviewed",
+      "hreflang_eligible": true
+    }
+  ],
+  "redirects": [],
+  "projections": [
+    { "key": "course", "state": "current", "default": true },
+    { "key": "ontomathpro", "state": "unavailable", "default": false },
+    { "key": "msc2020", "state": "license_needs_review", "default": false },
+    { "key": "arxiv", "state": "unavailable", "default": false },
+    { "key": "lean-mathlib", "state": "unavailable", "default": false }
+  ],
+  "external_payloads": []
+}
+

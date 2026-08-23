@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://formal-math-curriculum.github.io/schemas/p5-publication-entity-v1.json",
+  "title": "P5 publication entity v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["content_id", "route_key", "kind", "locales", "maturity"],
+  "properties": {
+    "content_id": { "type": "string", "minLength": 3 },
+    "route_key": { "type": "string", "pattern": "^[a-z0-9]{10,20}$" },
+    "kind": { "enum": ["definition", "theorem", "example", "exercise", "application", "editorial_unit", "learning_path", "module", "unit", "curriculum_reference"] },
+    "locales": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/locale" } },
+    "maturity": { "type": "object", "additionalProperties": { "type": "string" } }
+  },
+  "$defs": {
+    "locale": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["locale", "slug", "translation_state", "source_revision"],
+      "properties": {
+        "locale": { "enum": ["en", "pt"] },
+        "slug": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$" },
+        "translation_state": { "enum": ["current_reviewed", "stale", "unavailable", "draft"] },
+        "source_revision": { "type": "string", "minLength": 1 }
+      }
+    }
+  }
+}
+

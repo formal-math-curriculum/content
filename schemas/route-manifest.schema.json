@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://formal-math-curriculum.github.io/schemas/p5-route-manifest-v1.json",
+  "title": "P5 route manifest v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "canonical_host", "routes", "redirects"],
+  "properties": {
+    "schema_version": { "const": "p5-route-manifest/v1" },
+    "canonical_host": { "const": "https://formal-math-curriculum.github.io" },
+    "routes": { "type": "array", "items": { "$ref": "#/$defs/route" } },
+    "redirects": { "type": "array", "items": { "$ref": "#/$defs/redirect" } }
+  },
+  "$defs": {
+    "route": {
+      "type": "object",
+      "required": ["content_id", "route_key", "locale", "path", "translation_state", "hreflang_eligible"],
+      "properties": {
+        "content_id": { "type": "string" },
+        "route_key": { "type": "string", "pattern": "^[a-z0-9]{10,20}$" },
+        "locale": { "enum": ["en", "pt"] },
+        "path": { "type": "string", "pattern": "^/" },
+        "translation_state": { "enum": ["current_reviewed", "stale"] },
+        "hreflang_eligible": { "type": "boolean" }
+      }
+    },
+    "redirect": {
+      "type": "object",
+      "required": ["source", "target", "raw_edge_count"],
+      "properties": {
+        "source": { "type": "string", "pattern": "^/" },
+        "target": { "type": "string", "pattern": "^/" },
+        "raw_edge_count": { "type": "integer", "minimum": 1, "maximum": 8 }
+      }
+    }
+  }
+}
+
