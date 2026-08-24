@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://formal-math-curriculum.github.io/schemas/p5-formal-binding-v1.json",
+  "title": "P5 governed formal binding v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["content_id", "curriculum_candidate_id", "fart_id", "floc_id", "flink_id", "disclosure"],
+  "properties": {
+    "content_id": { "type": "string", "minLength": 3 },
+    "curriculum_candidate_id": { "pattern": "^CAND-P1-[0-9]{6}$" },
+    "fart_id": { "pattern": "^FART-P2-[0-9]{6}$" },
+    "floc_id": { "pattern": "^FLOC-P2-[0-9]{6}$" },
+    "flink_id": { "pattern": "^FLINK-P2-[0-9]{6}$" },
+    "disclosure": { "enum": ["exact", "scoped", "related"] }
+  }
+}

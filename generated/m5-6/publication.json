@@ -1,0 +1,1283 @@
+{
+  "schema_version": "p5-m56-publication/v1",
+  "source_identity": "P5-M5.6-CONTENT-v1",
+  "canonical_host": "https://formal-math-curriculum.github.io",
+  "freeze": {
+    "decision_id": "P5-M5.6-SLICE-FREEZE-v1",
+    "linear_document_id": "8e90977a-04f7-4d22-83f4-124ceaa060ae",
+    "selector_sha256": "280ad055d9235077b398d26dd6abb40c9d13ae089ad6d5a8fd0b11baed805aaf"
+  },
+  "bases": {
+    "site": "a263c9e5629728308911d993d97df74ff99f6e9a",
+    "content": "fb3df63b27ae54d4dc237a421dd241d4c59330e4",
+    "lean": "3f1a315f438af37a327eaf8b9b9c1dbc6f409394",
+    "lean_core": "d8b18978322de05a8f3dba51ef03cf5461676c17",
+    "mathlib": "db584cd6d46c92f209a44c0f1c829460d327499d"
+  },
+  "sources": [
+    {
+      "id": "src:p5:m5-6-freeze",
+      "title": "P5-M5.6-SLICE-FREEZE-v1",
+      "url": "https://linear.app/verified-mathematics/document/p5-m56-slice-freeze-v1-representative-publication-corpus-and-9c9a4416e98a",
+      "role": "selection_and_acceptance_authority",
+      "payload_policy": "project_authority"
+    },
+    {
+      "id": "src:p1:curriculum-v1",
+      "title": "Project 1 curriculum release identity",
+      "url": "https://linear.app/verified-mathematics/document/curriculum-v1-release-baseline-2b51192d8e9e",
+      "role": "curriculum_identity_authority",
+      "payload_policy": "project_authority"
+    },
+    {
+      "id": "src:p1:readiness-m1-5",
+      "title": "P1 prerequisite/readiness overlay",
+      "url": "https://linear.app/verified-mathematics/document/p4-m45-pedagogical-alignment-decision-v1-5538599521a2",
+      "role": "learner_readiness_authority",
+      "payload_policy": "project_authority"
+    },
+    {
+      "id": "src:p4:release-v1",
+      "title": "P4 first verified curriculum release baseline",
+      "url": "https://linear.app/verified-mathematics/document/p4-m48-first-verified-curriculum-release-baseline-v1-8efde162a712",
+      "role": "bounded_formal_scope_authority",
+      "payload_policy": "project_authority"
+    },
+    {
+      "id": "src:openstax:7-2",
+      "title": "OpenStax Prealgebra 2e section 7.2, Commutative and Associative Properties",
+      "url": "https://openstax.org/books/prealgebra-2e/pages/7-2-commutative-and-associative-properties",
+      "role": "pedagogical_schema_support",
+      "payload_policy": "link_and_original_paraphrase_only",
+      "license_state": "cc-by-nc-sa-link_only"
+    },
+    {
+      "id": "src:openstax:7-3",
+      "title": "OpenStax Prealgebra 2e section 7.3, Distributive Property",
+      "url": "https://openstax.org/books/prealgebra-2e/pages/7-3-distributive-property",
+      "role": "pedagogical_schema_support",
+      "payload_policy": "link_and_original_paraphrase_only",
+      "license_state": "cc-by-nc-sa-link_only"
+    },
+    {
+      "id": "src:openstax:7-4",
+      "title": "OpenStax Prealgebra 2e section 7.4, Properties of Identity, Inverses, and Zero",
+      "url": "https://openstax.org/books/prealgebra-2e/pages/7-4-properties-of-identity-inverses-and-zero",
+      "role": "pedagogical_schema_support",
+      "payload_policy": "link_and_original_paraphrase_only",
+      "license_state": "cc-by-nc-sa-link_only"
+    },
+    {
+      "id": "src:openstax:2-3",
+      "title": "OpenStax Prealgebra 2e section 2.3, Addition and Subtraction Properties of Equality",
+      "url": "https://openstax.org/books/prealgebra-2e/pages/2-3-solving-equations-using-the-subtraction-and-addition-properties-of-equality",
+      "role": "pedagogical_schema_support",
+      "payload_policy": "link_and_original_paraphrase_only",
+      "license_state": "cc-by-nc-sa-link_only"
+    },
+    {
+      "id": "src:openstax:3-3",
+      "title": "OpenStax Prealgebra 2e section 3.3, Add and Subtract Integers",
+      "url": "https://openstax.org/books/prealgebra-2e/pages/3-3-add-and-subtract-integers",
+      "role": "pedagogical_schema_support",
+      "payload_policy": "link_and_original_paraphrase_only",
+      "license_state": "cc-by-nc-sa-link_only"
+    },
+    {
+      "id": "src:openstax:3-4",
+      "title": "OpenStax Prealgebra 2e section 3.4, Multiply and Divide Integers",
+      "url": "https://openstax.org/books/prealgebra-2e/pages/3-4-multiply-and-divide-integers",
+      "role": "pedagogical_schema_support",
+      "payload_policy": "link_and_original_paraphrase_only",
+      "license_state": "cc-by-nc-sa-link_only"
+    },
+    {
+      "id": "src:lean:release",
+      "title": "P4 formalization release",
+      "url": "https://github.com/formal-math-curriculum/lean/tree/3f1a315f438af37a327eaf8b9b9c1dbc6f409394",
+      "role": "formal_statement_and_proof_authority",
+      "payload_policy": "exact_project_and_dependency_provenance"
+    }
+  ],
+  "content": [
+    {
+      "content_id": "cnt:p5m56:000001",
+      "route_key": "p5m56c0001",
+      "kind": "learning_path",
+      "title": "Arithmetic to algebra",
+      "slug": "arithmetic-to-algebra",
+      "summary": "A bounded path that makes arithmetic laws explicit, applies them to factored equations, and returns to signed-number operations.",
+      "objectives": [
+        "Distinguish Course order from learner prerequisites.",
+        "Move among narrative, examples, exercises, and exact formal provenance."
+      ],
+      "narrative": [
+        "This path is a representative publication slice, not a complete course. Its three modules are deliberately ordered to demonstrate that Course adjacency does not manufacture readiness truth."
+      ],
+      "source_refs": [
+        "src:p5:m5-6-freeze",
+        "src:p1:curriculum-v1",
+        "src:p4:release-v1"
+      ],
+      "maturity": {
+        "editorial": "current_reviewed",
+        "formal": "not_applicable",
+        "publication": "candidate_not_deployed"
+      },
+      "locales": [
+        {
+          "locale": "en",
+          "slug": "arithmetic-to-algebra",
+          "translation_state": "current_reviewed",
+          "source_revision": "P5-M5.6-CONTENT-v1"
+        },
+        {
+          "locale": "pt",
+          "slug": "arithmetic-to-algebra",
+          "translation_state": "unavailable",
+          "source_revision": "P5-M5.6-SLICE-FREEZE-v1"
+        }
+      ],
+      "prerequisite_disclosures": [],
+      "blocks": []
+    },
+    {
+      "content_id": "cnt:p5m56:000002",
+      "route_key": "p5m56c0002",
+      "kind": "module",
+      "title": "Natural-number operations",
+      "slug": "natural-number-operations",
+      "summary": "Natural-number operation laws form the arithmetic-to-algebra spine of the slice.",
+      "objectives": [
+        "Recognize identity, associativity, commutativity, distributivity, and cancellation as named structures.",
+        "Use the laws in concrete natural-number examples."
+      ],
+      "narrative": [
+        "The module exposes a bounded subset of CAND-P1-000004. It does not cover every arithmetic operation or a generic algebraic hierarchy."
+      ],
+      "source_refs": [
+        "src:p5:m5-6-freeze",
+        "src:p4:release-v1",
+        "src:openstax:7-2",
+        "src:openstax:7-3",
+        "src:openstax:7-4"
+      ],
+      "maturity": {
+        "editorial": "current_reviewed",
+        "formal": "not_applicable",
+        "publication": "candidate_not_deployed"
+      },
+      "locales": [
+        {
+          "locale": "en",
+          "slug": "natural-number-operations",
+          "translation_state": "current_reviewed",
+          "source_revision": "P5-M5.6-CONTENT-v1"
+        },
+        {
+          "locale": "pt",
+          "slug": "natural-number-operations",
+          "translation_state": "unavailable",
+          "source_revision": "P5-M5.6-SLICE-FREEZE-v1"
+        }
+      ],
+      "prerequisite_disclosures": [],
+      "blocks": []
+    },
+    {
+      "content_id": "cnt:p5m56:000003",
+      "route_key": "p5m56c0003",
+      "kind": "unit",
+      "title": "Distribute and cancel",
+      "slug": "distribute-and-cancel",
+      "summary": "A unit connecting the distributive law with cancellation of a common addend.",
+      "objectives": [
+        "Distribute multiplication to both addends.",
+        "Cancel an equal common addend before evaluating an expression."
+      ],
+      "narrative": [
+        "The two moves are kept visible as separate checkpoints so a correct final numeral does not hide an invalid transformation."
+      ],
+      "source_refs": [
+        "src:p5:m5-6-freeze",
+        "src:openstax:7-3",
+        "src:openstax:2-3"
+      ],
+      "maturity": {
+        "editorial": "current_reviewed",
+        "formal": "not_applicable",
+        "publication": "candidate_not_deployed"
+      },
+      "locales": [
+        {
+          "locale": "en",
+          "slug": "distribute-and-cancel",
+          "translation_state": "current_reviewed",
+          "source_revision": "P5-M5.6-CONTENT-v1"
+        },
+        {
+          "locale": "pt",
+          "slug": "distribute-and-cancel",
+          "translation_state": "unavailable",
+          "source_revision": "P5-M5.6-SLICE-FREEZE-v1"
+        }
+      ],
+      "prerequisite_disclosures": [],
+      "blocks": []
+    },
+    {
+      "content_id": "cnt:p5m56:000004",
+      "route_key": "p5m56c0004",
+      "kind": "editorial_unit",
+      "title": "Natural-number operation laws",
+      "slug": "natural-number-operation-laws",
+      "curriculum_candidate_id": "CAND-P1-000004",
+      "summary": "A bounded view of natural-number identities, associativity, commutativity, distributivity, and additive cancellation.",
+      "search_terms": [
+        "distributive",
+        "distributivity",
+        "Nat.instDistrib",
+        "natural number laws"
+      ],
+      "objectives": [
+        "Read familiar computations as instances of reusable law schemas.",
+        "Separate the instructional scope from the more general library structure used to verify it."
+      ],
+      "narrative": [
+        "Addition on natural numbers has an identity, is associative and commutative, and supports cancellation. Multiplication has its own identity, is associative and commutative, and distributes over addition.",
+        "The formal layer points to pinned mathlib instances. Those instances establish exact technical provenance; they do not expand this page to all of CAND-P1-000004 or turn a library import into a learner prerequisite."
+      ],
+      "source_refs": [
+        "src:p1:curriculum-v1",
+        "src:p1:readiness-m1-5",
+        "src:p4:release-v1",
+        "src:openstax:7-2",
+        "src:openstax:7-3",
+        "src:openstax:7-4",
+        "src:lean:release"
+      ],
+      "maturity": {
+        "editorial": "current_reviewed",
+        "formal": "release_qualified_bounded",
+        "publication": "candidate_not_deployed"
+      },
+      "locales": [
+        {
+          "locale": "en",
+          "slug": "natural-number-operation-laws",
+          "translation_state": "current_reviewed",
+          "source_revision": "P5-M5.6-CONTENT-v1"
+        },
+        {
+          "locale": "pt",
+          "slug": "natural-number-operation-laws",
+          "translation_state": "unavailable",
+          "source_revision": "P5-M5.6-SLICE-FREEZE-v1"
+        }
+      ],
+      "prerequisite_disclosures": [
+        {
+          "relation_id": "READY-P1-000001",
+          "from_candidate_id": "CAND-P1-000003",
+          "label": "Numeration, Place Value, and Number Representation",
+          "scope": "positional or written arithmetic beyond small-number counting",
+          "published_in_slice": false
+        }
+      ],
+      "blocks": [
+        {
+          "block_id": "nat-monoid-laws",
+          "title": "Identity, association, commutation, and cancellation",
+          "rendered": "For natural numbers, zero is the additive identity, one is the multiplicative identity, addition and multiplication associate and commute, and an equal common addend can be cancelled.",
+          "latex": "a+0=a,\\quad a+b=b+a,\\quad (a+b)+c=a+(b+c),\\quad a+c=b+c\\Rightarrow a=b,\\quad a\\cdot1=a,\\quad a\\cdot b=b\\cdot a.",
+          "formal_binding": {
+            "fart_id": "FART-P2-000004",
+            "floc_id": "FLOC-P2-000005",
+            "flink_id": "FLINK-P2-000004",
+            "lean_state": "scoped"
+          },
+          "lean": {
+            "source": "#check Nat.instAddCancelCommMonoid\\n#check Nat.instCommMonoid",
+            "module": "Mathlib.Algebra.Group.Nat.Defs",
+            "declarations": [
+              "Nat.instAddCancelCommMonoid",
+              "Nat.instCommMonoid"
+            ],
+            "repository": "leanprover-community/mathlib4",
+            "revision": "db584cd6d46c92f209a44c0f1c829460d327499d",
+            "source_kind": "generated_probe_from_exact_locator"
+          }
+        },
+        {
+          "block_id": "nat-distributive-laws",
+          "title": "Distributivity",
+          "rendered": "Multiplication distributes over addition on both the left and the right.",
+          "latex": "a(b+c)=ab+ac,\\qquad (a+b)c=ac+bc.",
+          "formal_binding": {
+            "fart_id": "FART-P2-000005",
+            "floc_id": "FLOC-P2-000006",
+            "flink_id": "FLINK-P2-000005",
+            "lean_state": "scoped"
+          },
+          "lean": {
+            "source": "#check Nat.instDistrib",
+            "module": "Mathlib.Algebra.Ring.Nat",
+            "declarations": [
+              "Nat.instDistrib"
+            ],
+            "repository": "leanprover-community/mathlib4",
+            "revision": "db584cd6d46c92f209a44c0f1c829460d327499d",
+            "source_kind": "generated_probe_from_exact_locator"
+          }
+        }
+      ]
+    },
+    {
+      "content_id": "cnt:p5m56:000005",
+      "route_key": "p5m56c0005",
+      "kind": "example",
+      "title": "Natural-number law examples",
+      "slug": "natural-number-law-examples",
+      "curriculum_candidate_id": "CAND-P1-000004",
+      "summary": "Two kernel-checked examples show distribution and cancellation without pretending to replace the canonical laws.",
+      "search_terms": [
+        "distribute",
+        "cancel",
+        "cancellation"
+      ],
+      "objectives": [
+        "Expand 7(4+3) to 7·4+7·3.",
+        "Cancel the common left addend 9 from an equality."
+      ],
+      "narrative": [
+        "The examples are concrete views of the bounded treatment. They are not generic proofs and do not by themselves establish whole-topic coverage."
+      ],
+      "source_refs": [
+        "src:p4:release-v1",
+        "src:openstax:7-3",
+        "src:openstax:2-3",
+        "src:lean:release"
+      ],
+      "maturity": {
+        "editorial": "current_reviewed",
+        "formal": "release_qualified_example",
+        "publication": "candidate_not_deployed"
+      },
+      "locales": [
+        {
+          "locale": "en",
+          "slug": "natural-number-law-examples",
+          "translation_state": "current_reviewed",
+          "source_revision": "P5-M5.6-CONTENT-v1"
+        },
+        {
+          "locale": "pt",
+          "slug": "natural-number-law-examples",
+          "translation_state": "unavailable",
+          "source_revision": "P5-M5.6-SLICE-FREEZE-v1"
+        }
+      ],
+      "prerequisite_disclosures": [],
+      "blocks": [
+        {
+          "block_id": "nat-law-examples",
+          "title": "Distribute seven; cancel nine",
+          "rendered": "Seven times the sum four plus three equals the sum of the two products. If 9+x=9+y, cancelling the common addend gives x=y.",
+          "latex": "7(4+3)=7\\cdot4+7\\cdot3,\\qquad 9+x=9+y\\Rightarrow x=y.",
+          "formal_binding": {
+            "fart_id": "FART-P2-000006",
+            "floc_id": "FLOC-P2-000007",
+            "flink_id": "FLINK-P2-000006",
+            "lean_state": "scoped"
+          },
+          "lean": {
+            "source": "public theorem seven_distributes_over_four_plus_three : 7 * (4 + 3) = 7 * 4 + 7 * 3 :=\\n  Nat.left_distrib 7 4 3\\n\\npublic theorem cancel_common_nine_addend {x y : Nat} (h : 9 + x = 9 + y) : x = y :=\\n  Nat.add_left_cancel h",
+            "module": "FormalMath.Arithmetic.Examples.NaturalNumberLaws",
+            "declarations": [
+              "FormalMath.Arithmetic.Examples.seven_distributes_over_four_plus_three",
+              "FormalMath.Arithmetic.Examples.cancel_common_nine_addend"
+            ],
+            "repository": "formal-math-curriculum/lean",
+            "revision": "1b71481eec0973bea8f1bdbb52c72d8e28bbde89",
+            "source_kind": "exact_project_source"
+          }
+        }
+      ]
+    },
+    {
+      "content_id": "cnt:p5m56:000006",
+      "route_key": "p5m56c0006",
+      "kind": "exercise",
+      "title": "Distribute-and-cancel exercise",
+      "slug": "distribute-and-cancel-exercise",
+      "curriculum_candidate_id": "CAND-P1-000004",
+      "summary": "A guided distributive-law exercise checks cancellation, full distribution, and the final natural-number value as three separate steps.",
+      "search_terms": [
+        "distributive",
+        "distribute",
+        "cancel",
+        "exercise"
+      ],
+      "objectives": [
+        "Cancel a common addend from both sides.",
+        "Distribute to both addends.",
+        "Verify the final value and reject a one-addend distribution error."
+      ],
+      "narrative": [
+        "Given 9+7(4+3)=9+n, determine n. Record the cancellation equality, the distributed equality, and the final value separately.",
+        "The solution is intentionally hidden by default in the learner interface. The diagnostic counterexample shows why multiplying only the first addend is wrong; one counterexample is not a proof of the general distributive law."
+      ],
+      "source_refs": [
+        "src:p1:readiness-m1-5",
+        "src:p4:release-v1",
+        "src:openstax:7-3",
+        "src:openstax:2-3",
+        "src:lean:release"
+      ],
+      "maturity": {
+        "editorial": "current_reviewed",
+        "formal": "release_qualified_exercise",
+        "publication": "candidate_not_deployed"
+      },
+      "locales": [
+        {
+          "locale": "en",
+          "slug": "distribute-and-cancel-exercise",
+          "translation_state": "current_reviewed",
+          "source_revision": "P5-M5.6-CONTENT-v1"
+        },
+        {
+          "locale": "pt",
+          "slug": "distribute-and-cancel-exercise",
+          "translation_state": "unavailable",
+          "source_revision": "P5-M5.6-SLICE-FREEZE-v1"
+        }
+      ],
+      "prerequisite_disclosures": [
+        {
+          "relation_id": "READY-P1-000001",
+          "from_candidate_id": "CAND-P1-000003",
+          "label": "Numeration, Place Value, and Number Representation",
+          "scope": "positional or written arithmetic beyond small-number counting",
+          "published_in_slice": false
+        }
+      ],
+      "exercise": {
+        "prompt": "Assume 9 + 7(4 + 3) = 9 + n for a natural number n. Show the cancellation step, distribute to both addends, and determine n.",
+        "solution_initially_open": false,
+        "checkpoints": [
+          "7(4+3)=n",
+          "7·4+7·3=n",
+          "n=49"
+        ],
+        "diagnostic": "7(4+3) is not equal to 7·4+3."
+      },
+      "blocks": [
+        {
+          "block_id": "distribute-cancel-solution",
+          "title": "Guided solution and diagnostic",
+          "rendered": "Cancelling the common 9 gives 7(4+3)=n. Distributing gives 7·4+7·3=n. Evaluating gives n=49. The expression 7·4+3 is not equal to the original product.",
+          "latex": "9+7(4+3)=9+n\\Rightarrow 7(4+3)=n\\Rightarrow 7\\cdot4+7\\cdot3=n\\Rightarrow n=49.",
+          "formal_binding": {
+            "fart_id": "FART-P2-000010",
+            "floc_id": "FLOC-P2-000011",
+            "flink_id": "FLINK-P2-000010",
+            "lean_state": "exact"
+          },
+          "lean": {
+            "source": "public theorem distribute_then_cancel_solution {n : Nat}\\n    (h : 9 + 7 * (4 + 3) = 9 + n) :\\n    7 * (4 + 3) = n ∧ 7 * 4 + 7 * 3 = n ∧ n = 49 := by\\n  have hcancel : 7 * (4 + 3) = n :=\\n    FormalMath.Arithmetic.Examples.cancel_common_nine_addend h\\n  have hdistributed : 7 * 4 + 7 * 3 = n := by\\n    calc\\n      7 * 4 + 7 * 3 = 7 * (4 + 3) :=\\n        FormalMath.Arithmetic.Examples.seven_distributes_over_four_plus_three.symm\\n      _ = n := hcancel\\n  have hanswer : n = 49 := by\\n    calc\\n      n = 7 * (4 + 3) := hcancel.symm\\n      _ = 7 * 4 + 7 * 3 :=\\n        FormalMath.Arithmetic.Examples.seven_distributes_over_four_plus_three\\n      _ = 49 := rfl\\n  exact ⟨hcancel, hdistributed, hanswer⟩\\n\\npublic theorem distribute_first_addend_only_is_wrong :\\n    7 * (4 + 3) ≠ 7 * 4 + 3 := by\\n  decide",
+            "module": "FormalMath.Arithmetic.Exercises.NaturalNumberLaws",
+            "declarations": [
+              "FormalMath.Arithmetic.Exercises.distribute_then_cancel_solution",
+              "FormalMath.Arithmetic.Exercises.distribute_first_addend_only_is_wrong"
+            ],
+            "repository": "formal-math-curriculum/lean",
+            "revision": "02989949c176a839a733031514e7d0e6721350d1",
+            "source_kind": "exact_project_source"
+          }
+        }
+      ]
+    },
+    {
+      "content_id": "cnt:p5m56:000007",
+      "route_key": "p5m56c0007",
+      "kind": "module",
+      "title": "Signed-number operations",
+      "slug": "signed-number-operations",
+      "summary": "A bounded return to arithmetic operations with integer signs.",
+      "objectives": [
+        "Interpret subtraction of a negative as addition.",
+        "Interpret a product of two negative integers as positive."
+      ],
+      "narrative": [
+        "The module follows the independent factored-equation branch in Course order, while learner readiness still follows CAND4 to CAND9."
+      ],
+      "source_refs": [
+        "src:p5:m5-6-freeze",
+        "src:p1:readiness-m1-5",
+        "src:p4:release-v1",
+        "src:openstax:3-3",
+        "src:openstax:3-4"
+      ],
+      "maturity": {
+        "editorial": "current_reviewed",
+        "formal": "not_applicable",
+        "publication": "candidate_not_deployed"
+      },
+      "locales": [
+        {
+          "locale": "en",
+          "slug": "signed-number-operations",
+          "translation_state": "current_reviewed",
+          "source_revision": "P5-M5.6-CONTENT-v1"
+        },
+        {
+          "locale": "pt",
+          "slug": "signed-number-operations",
+          "translation_state": "unavailable",
+          "source_revision": "P5-M5.6-SLICE-FREEZE-v1"
+        }
+      ],
+      "prerequisite_disclosures": [],
+      "blocks": []
+    },
+    {
+      "content_id": "cnt:p5m56:000008",
+      "route_key": "p5m56c0008",
+      "kind": "unit",
+      "title": "Integer sign laws",
+      "slug": "integer-sign-laws",
+      "summary": "A unit for subtraction of a negative and multiplication of two negatives.",
+      "objectives": [
+        "Connect sign rules to additive-group and ring structure.",
+        "Keep concrete examples distinct from general laws."
+      ],
+      "narrative": [
+        "The repeated distribute-and-cancel exercise appears first as review. Its canonical identity and route do not change in this placement."
+      ],
+      "source_refs": [
+        "src:p5:m5-6-freeze",
+        "src:p4:release-v1",
+        "src:openstax:3-3",
+        "src:openstax:3-4"
+      ],
+      "maturity": {
+        "editorial": "current_reviewed",
+        "formal": "not_applicable",
+        "publication": "candidate_not_deployed"
+      },
+      "locales": [
+        {
+          "locale": "en",
+          "slug": "integer-sign-laws",
+          "translation_state": "current_reviewed",
+          "source_revision": "P5-M5.6-CONTENT-v1"
+        },
+        {
+          "locale": "pt",
+          "slug": "integer-sign-laws",
+          "translation_state": "unavailable",
+          "source_revision": "P5-M5.6-SLICE-FREEZE-v1"
+        }
+      ],
+      "prerequisite_disclosures": [],
+      "blocks": []
+    },
+    {
+      "content_id": "cnt:p5m56:000009",
+      "route_key": "p5m56c0009",
+      "kind": "editorial_unit",
+      "title": "Integer operation and sign laws",
+      "slug": "integer-operation-and-sign-laws",
+      "curriculum_candidate_id": "CAND-P1-000009",
+      "summary": "A bounded view of additive inverses, subtraction of a negative, and multiplication of two negatives.",
+      "objectives": [
+        "Rewrite subtraction of a negative as addition.",
+        "Explain the positive product of two negative integers within the bounded integer treatment."
+      ],
+      "narrative": [
+        "The formal layer uses exact pinned integer structures and laws. Generic commutative-ring structure is technical provenance, not the curriculum scope of this page."
+      ],
+      "source_refs": [
+        "src:p1:curriculum-v1",
+        "src:p1:readiness-m1-5",
+        "src:p4:release-v1",
+        "src:openstax:3-3",
+        "src:openstax:3-4",
+        "src:lean:release"
+      ],
+      "maturity": {
+        "editorial": "current_reviewed",
+        "formal": "release_qualified_bounded",
+        "publication": "candidate_not_deployed"
+      },
+      "locales": [
+        {
+          "locale": "en",
+          "slug": "integer-operation-and-sign-laws",
+          "translation_state": "current_reviewed",
+          "source_revision": "P5-M5.6-CONTENT-v1"
+        },
+        {
+          "locale": "pt",
+          "slug": "integer-operation-and-sign-laws",
+          "translation_state": "unavailable",
+          "source_revision": "P5-M5.6-SLICE-FREEZE-v1"
+        }
+      ],
+      "prerequisite_disclosures": [
+        {
+          "relation_id": "READY-P1-000006",
+          "from_candidate_id": "CAND-P1-000004",
+          "label": "Arithmetic Operations and Their Properties",
+          "scope": "signed-number operations, not first exposure to negative quantities",
+          "published_in_slice": true,
+          "content_id": "cnt:p5m56:000004"
+        }
+      ],
+      "blocks": [
+        {
+          "block_id": "integer-additive-laws",
+          "title": "Additive inverse and subtraction",
+          "rendered": "Subtracting a negative integer is the corresponding addition.",
+          "latex": "a-(-b)=a+b.",
+          "formal_binding": {
+            "fart_id": "FART-P2-000007",
+            "floc_id": "FLOC-P2-000008",
+            "flink_id": "FLINK-P2-000007",
+            "lean_state": "scoped"
+          },
+          "lean": {
+            "source": "#check Int.instAddCommGroup",
+            "module": "Mathlib.Algebra.Group.Int.Defs",
+            "declarations": [
+              "Int.instAddCommGroup"
+            ],
+            "repository": "leanprover-community/mathlib4",
+            "revision": "db584cd6d46c92f209a44c0f1c829460d327499d",
+            "source_kind": "generated_probe_from_exact_locator"
+          }
+        },
+        {
+          "block_id": "integer-negative-product",
+          "title": "Product of two negatives",
+          "rendered": "The product of two negative integers equals the corresponding positive product.",
+          "latex": "(-a)(-b)=ab.",
+          "formal_binding": {
+            "fart_id": "FART-P2-000008",
+            "floc_id": "FLOC-P2-000009",
+            "flink_id": "FLINK-P2-000008",
+            "lean_state": "scoped"
+          },
+          "lean": {
+            "source": "#check Int.instCommRing",
+            "module": "Mathlib.Algebra.Ring.Int.Defs",
+            "declarations": [
+              "Int.instCommRing"
+            ],
+            "repository": "leanprover-community/mathlib4",
+            "revision": "db584cd6d46c92f209a44c0f1c829460d327499d",
+            "source_kind": "generated_probe_from_exact_locator"
+          }
+        }
+      ]
+    },
+    {
+      "content_id": "cnt:p5m56:000010",
+      "route_key": "p5m56c0010",
+      "kind": "example",
+      "title": "Integer sign-law examples",
+      "slug": "integer-sign-law-examples",
+      "curriculum_candidate_id": "CAND-P1-000009",
+      "summary": "Two concrete examples compute seven minus negative three and negative seven times negative four.",
+      "objectives": [
+        "Evaluate 7-(-3).",
+        "Evaluate (-7)(-4)."
+      ],
+      "narrative": [
+        "These examples are exact formal statements but remain examples of a bounded treatment, not generic proofs or whole-topic coverage."
+      ],
+      "source_refs": [
+        "src:p4:release-v1",
+        "src:openstax:3-3",
+        "src:openstax:3-4",
+        "src:lean:release"
+      ],
+      "maturity": {
+        "editorial": "current_reviewed",
+        "formal": "release_qualified_example",
+        "publication": "candidate_not_deployed"
+      },
+      "locales": [
+        {
+          "locale": "en",
+          "slug": "integer-sign-law-examples",
+          "translation_state": "current_reviewed",
+          "source_revision": "P5-M5.6-CONTENT-v1"
+        },
+        {
+          "locale": "pt",
+          "slug": "integer-sign-law-examples",
+          "translation_state": "unavailable",
+          "source_revision": "P5-M5.6-SLICE-FREEZE-v1"
+        }
+      ],
+      "prerequisite_disclosures": [],
+      "blocks": [
+        {
+          "block_id": "integer-sign-examples",
+          "title": "Subtract and multiply signed integers",
+          "rendered": "Seven minus negative three is ten. Negative seven times negative four is twenty-eight.",
+          "latex": "7-(-3)=10,\\qquad (-7)(-4)=28.",
+          "formal_binding": {
+            "fart_id": "FART-P2-000009",
+            "floc_id": "FLOC-P2-000010",
+            "flink_id": "FLINK-P2-000009",
+            "lean_state": "scoped"
+          },
+          "lean": {
+            "source": "public theorem seven_sub_neg_three : (7 : ℤ) - (-3) = 10 := by\\n  calc\\n    (7 : ℤ) - (-3) = 7 + 3 := Int.sub_neg 7 3\\n    _ = 10 := rfl\\n\\npublic theorem neg_seven_mul_neg_four : (-7 : ℤ) * (-4) = 28 := by\\n  calc\\n    (-7 : ℤ) * (-4) = 7 * 4 := Int.neg_mul_neg 7 4\\n    _ = 28 := rfl",
+            "module": "FormalMath.Arithmetic.Examples.IntegerSignLaws",
+            "declarations": [
+              "FormalMath.Arithmetic.Examples.seven_sub_neg_three",
+              "FormalMath.Arithmetic.Examples.neg_seven_mul_neg_four"
+            ],
+            "repository": "formal-math-curriculum/lean",
+            "revision": "f95f072cd3548f3863b5220fdeb2fe8237ac64ec",
+            "source_kind": "exact_project_source"
+          }
+        }
+      ]
+    },
+    {
+      "content_id": "cnt:p5m56:000011",
+      "route_key": "p5m56c0011",
+      "kind": "module",
+      "title": "Factored expressions and equations",
+      "slug": "factored-expressions-and-equations",
+      "summary": "A bounded branch from a factored integer expression to its zero-product solution characterization.",
+      "objectives": [
+        "Read a factored expression as a named construction.",
+        "Connect zero product with the two displayed roots."
+      ],
+      "narrative": [
+        "This branch sits between the natural-number and signed-number modules in Course order. No readiness edge is inferred from that placement."
+      ],
+      "source_refs": [
+        "src:p5:m5-6-freeze",
+        "src:p4:release-v1",
+        "src:lean:release"
+      ],
+      "maturity": {
+        "editorial": "current_reviewed",
+        "formal": "not_applicable",
+        "publication": "candidate_not_deployed"
+      },
+      "locales": [
+        {
+          "locale": "en",
+          "slug": "factored-expressions-and-equations",
+          "translation_state": "current_reviewed",
+          "source_revision": "P5-M5.6-CONTENT-v1"
+        },
+        {
+          "locale": "pt",
+          "slug": "factored-expressions-and-equations",
+          "translation_state": "unavailable",
+          "source_revision": "P5-M5.6-SLICE-FREEZE-v1"
+        }
+      ],
+      "prerequisite_disclosures": [],
+      "blocks": []
+    },
+    {
+      "content_id": "cnt:p5m56:000012",
+      "route_key": "p5m56c0012",
+      "kind": "unit",
+      "title": "Zero-product method",
+      "slug": "zero-product-method",
+      "summary": "A unit for recognizing the roots displayed by a factored integer equation.",
+      "objectives": [
+        "Interpret (x-a)(x-b)=0.",
+        "Check the roots a and b without expanding the product."
+      ],
+      "narrative": [
+        "The unit is limited to the exact integer factored-product construction and theorem in the P4 release."
+      ],
+      "source_refs": [
+        "src:p5:m5-6-freeze",
+        "src:p4:release-v1",
+        "src:lean:release"
+      ],
+      "maturity": {
+        "editorial": "current_reviewed",
+        "formal": "not_applicable",
+        "publication": "candidate_not_deployed"
+      },
+      "locales": [
+        {
+          "locale": "en",
+          "slug": "zero-product-method",
+          "translation_state": "current_reviewed",
+          "source_revision": "P5-M5.6-CONTENT-v1"
+        },
+        {
+          "locale": "pt",
+          "slug": "zero-product-method",
+          "translation_state": "unavailable",
+          "source_revision": "P5-M5.6-SLICE-FREEZE-v1"
+        }
+      ],
+      "prerequisite_disclosures": [],
+      "blocks": []
+    },
+    {
+      "content_id": "cnt:p5m56:000013",
+      "route_key": "p5m56c0013",
+      "kind": "definition",
+      "title": "Factored integer expression",
+      "slug": "factored-integer-expression",
+      "curriculum_candidate_id": "CAND-P1-000016",
+      "summary": "The expression (x-a)(x-b) is the bounded factored-product construction used by this slice.",
+      "objectives": [
+        "Identify the two displayed linear factors.",
+        "Evaluate the expression at a proposed integer root."
+      ],
+      "narrative": [
+        "The construction names one expression for the vertical slice. It is not a replacement integer type or a claim of complete algebraic-expression coverage."
+      ],
+      "source_refs": [
+        "src:p1:curriculum-v1",
+        "src:p4:release-v1",
+        "src:lean:release"
+      ],
+      "maturity": {
+        "editorial": "current_reviewed",
+        "formal": "release_qualified_exact",
+        "publication": "candidate_not_deployed"
+      },
+      "locales": [
+        {
+          "locale": "en",
+          "slug": "factored-integer-expression",
+          "translation_state": "current_reviewed",
+          "source_revision": "P5-M5.6-CONTENT-v1"
+        },
+        {
+          "locale": "pt",
+          "slug": "factored-integer-expression",
+          "translation_state": "unavailable",
+          "source_revision": "P5-M5.6-SLICE-FREEZE-v1"
+        }
+      ],
+      "prerequisite_disclosures": [],
+      "blocks": [
+        {
+          "block_id": "factored-product-definition",
+          "title": "Factored product",
+          "rendered": "For integers a, b, and x, the factored product is (x-a)(x-b).",
+          "latex": "\\operatorname{factoredProduct}(a,b,x)=(x-a)(x-b).",
+          "formal_binding": {
+            "fart_id": "FART-P2-000001",
+            "floc_id": "FLOC-P2-000001",
+            "flink_id": "FLINK-P2-000001",
+            "lean_state": "exact"
+          },
+          "lean": {
+            "source": "public def factoredProduct (a b x : ℤ) : ℤ :=\\n  (x - a) * (x - b)",
+            "module": "FormalMath.Algebra.FactoredEquation",
+            "declarations": [
+              "FormalMath.Algebra.factoredProduct"
+            ],
+            "repository": "formal-math-curriculum/lean",
+            "revision": "0d48b18ea62783633470668692472c345ec8b548",
+            "source_kind": "exact_project_source"
+          }
+        }
+      ]
+    },
+    {
+      "content_id": "cnt:p5m56:000014",
+      "route_key": "p5m56c0014",
+      "kind": "theorem",
+      "title": "Zero-product characterization",
+      "slug": "zero-product-characterization",
+      "curriculum_candidate_id": "CAND-P1-000017",
+      "summary": "The selected factored integer product is zero exactly when x equals one of its displayed roots.",
+      "objectives": [
+        "Read the equivalence between a zero product and its two roots.",
+        "Keep proof dependencies distinct from learner prerequisites."
+      ],
+      "narrative": [
+        "For the project-owned factoredProduct, equality to zero is equivalent to x=a or x=b. The statement is bounded to integer factors and this exact construction."
+      ],
+      "source_refs": [
+        "src:p1:curriculum-v1",
+        "src:p4:release-v1",
+        "src:lean:release"
+      ],
+      "maturity": {
+        "editorial": "current_reviewed",
+        "formal": "release_qualified_exact",
+        "publication": "candidate_not_deployed"
+      },
+      "locales": [
+        {
+          "locale": "en",
+          "slug": "zero-product-characterization",
+          "translation_state": "current_reviewed",
+          "source_revision": "P5-M5.6-CONTENT-v1"
+        },
+        {
+          "locale": "pt",
+          "slug": "zero-product-characterization",
+          "translation_state": "unavailable",
+          "source_revision": "P5-M5.6-SLICE-FREEZE-v1"
+        }
+      ],
+      "prerequisite_disclosures": [],
+      "blocks": [
+        {
+          "block_id": "zero-product-iff",
+          "title": "Exactly the displayed roots",
+          "rendered": "The factored product is zero if and only if x=a or x=b.",
+          "latex": "(x-a)(x-b)=0\\iff x=a\\lor x=b.",
+          "formal_binding": {
+            "fart_id": "FART-P2-000002",
+            "floc_id": "FLOC-P2-000002",
+            "flink_id": "FLINK-P2-000002",
+            "lean_state": "exact"
+          },
+          "lean": {
+            "source": "public theorem factoredProduct_eq_zero_iff (a b x : ℤ) :\\n    factoredProduct a b x = 0 ↔ x = a ∨ x = b := by\\n  constructor\\n  · intro h\\n    have hmul : (x - a) * (x - b) = 0 := by\\n      simpa [factoredProduct] using h\\n    rcases Int.eq_zero_or_eq_zero_of_mul_eq_zero hmul with ha | hb\\n    · exact Or.inl (Int.eq_of_sub_eq_zero ha)\\n    · exact Or.inr (Int.eq_of_sub_eq_zero hb)\\n  · intro h\\n    rcases h with rfl | rfl <;> simp [factoredProduct]",
+            "module": "FormalMath.Algebra.ZeroProduct",
+            "declarations": [
+              "FormalMath.Algebra.factoredProduct_eq_zero_iff"
+            ],
+            "repository": "formal-math-curriculum/lean",
+            "revision": "0d48b18ea62783633470668692472c345ec8b548",
+            "source_kind": "exact_project_source"
+          }
+        }
+      ]
+    },
+    {
+      "content_id": "cnt:p5m56:000015",
+      "route_key": "p5m56c0015",
+      "kind": "example",
+      "title": "Roots two and five",
+      "slug": "roots-two-and-five-example",
+      "curriculum_candidate_id": "CAND-P1-000017",
+      "summary": "The equation (x-2)(x-5)=0 has exactly the integer roots 2 and 5.",
+      "objectives": [
+        "Specialize the general zero-product characterization.",
+        "Read explicit unavailable and needs-review external-classification states."
+      ],
+      "narrative": [
+        "The formal example is current at FLOC-P2-000004; FLOC-P2-000003 is retained only as historical locator evidence.",
+        "No reviewed OntoMathPRO, MSC2020, or arXiv placement exists for this page. The absence is part of the representative corpus and must remain visible."
+      ],
+      "source_refs": [
+        "src:p4:release-v1",
+        "src:lean:release",
+        "src:p5:m5-6-freeze"
+      ],
+      "maturity": {
+        "editorial": "current_reviewed",
+        "formal": "release_qualified_example",
+        "publication": "candidate_not_deployed"
+      },
+      "locales": [
+        {
+          "locale": "en",
+          "slug": "roots-two-and-five-example",
+          "translation_state": "current_reviewed",
+          "source_revision": "P5-M5.6-CONTENT-v1"
+        },
+        {
+          "locale": "pt",
+          "slug": "roots-two-and-five-example",
+          "translation_state": "unavailable",
+          "source_revision": "P5-M5.6-SLICE-FREEZE-v1"
+        }
+      ],
+      "prerequisite_disclosures": [],
+      "blocks": [
+        {
+          "block_id": "roots-two-five",
+          "title": "A factored equation with two roots",
+          "rendered": "The factored product with displayed roots 2 and 5 is zero exactly at x=2 or x=5.",
+          "latex": "(x-2)(x-5)=0\\iff x=2\\lor x=5.",
+          "formal_binding": {
+            "fart_id": "FART-P2-000003",
+            "floc_id": "FLOC-P2-000004",
+            "flink_id": "FLINK-P2-000003",
+            "lean_state": "exact"
+          },
+          "lean": {
+            "source": "public theorem two_five_factored_equation (x : ℤ) :\\n    FormalMath.Algebra.factoredProduct 2 5 x = 0 ↔ x = 2 ∨ x = 5 := by\\n  simpa using FormalMath.Algebra.factoredProduct_eq_zero_iff 2 5 x",
+            "module": "FormalMath.Algebra.Examples.FactoredIntegerEquation",
+            "declarations": [
+              "FormalMath.Algebra.Examples.two_five_factored_equation"
+            ],
+            "repository": "formal-math-curriculum/lean",
+            "revision": "46ad79e7fe767975cb30a2658b7456032f71498d",
+            "source_kind": "exact_project_source",
+            "historical_locator": "FLOC-P2-000003"
+          }
+        }
+      ]
+    }
+  ],
+  "course": {
+    "root_content_id": "cnt:p5m56:000001",
+    "ordering_semantics": "authored_course_order_not_readiness",
+    "references": [
+      {
+        "reference_id": "m56cr0001",
+        "parent_content_id": "cnt:p5m56:000001",
+        "content_id": "cnt:p5m56:000002",
+        "order": 1,
+        "role": "primary"
+      },
+      {
+        "reference_id": "m56cr0002",
+        "parent_content_id": "cnt:p5m56:000002",
+        "content_id": "cnt:p5m56:000003",
+        "order": 1,
+        "role": "primary"
+      },
+      {
+        "reference_id": "m56cr0003",
+        "parent_content_id": "cnt:p5m56:000003",
+        "content_id": "cnt:p5m56:000004",
+        "order": 1,
+        "role": "primary"
+      },
+      {
+        "reference_id": "m56cr0004",
+        "parent_content_id": "cnt:p5m56:000003",
+        "content_id": "cnt:p5m56:000005",
+        "order": 2,
+        "role": "primary"
+      },
+      {
+        "reference_id": "m56cr0005",
+        "parent_content_id": "cnt:p5m56:000003",
+        "content_id": "cnt:p5m56:000006",
+        "order": 3,
+        "role": "primary"
+      },
+      {
+        "reference_id": "m56cr0006",
+        "parent_content_id": "cnt:p5m56:000001",
+        "content_id": "cnt:p5m56:000011",
+        "order": 2,
+        "role": "primary"
+      },
+      {
+        "reference_id": "m56cr0007",
+        "parent_content_id": "cnt:p5m56:000011",
+        "content_id": "cnt:p5m56:000012",
+        "order": 1,
+        "role": "primary"
+      },
+      {
+        "reference_id": "m56cr0008",
+        "parent_content_id": "cnt:p5m56:000012",
+        "content_id": "cnt:p5m56:000013",
+        "order": 1,
+        "role": "primary"
+      },
+      {
+        "reference_id": "m56cr0009",
+        "parent_content_id": "cnt:p5m56:000012",
+        "content_id": "cnt:p5m56:000014",
+        "order": 2,
+        "role": "primary"
+      },
+      {
+        "reference_id": "m56cr0010",
+        "parent_content_id": "cnt:p5m56:000012",
+        "content_id": "cnt:p5m56:000015",
+        "order": 3,
+        "role": "primary"
+      },
+      {
+        "reference_id": "m56cr0011",
+        "parent_content_id": "cnt:p5m56:000001",
+        "content_id": "cnt:p5m56:000007",
+        "order": 3,
+        "role": "primary"
+      },
+      {
+        "reference_id": "m56cr0012",
+        "parent_content_id": "cnt:p5m56:000007",
+        "content_id": "cnt:p5m56:000008",
+        "order": 1,
+        "role": "primary"
+      },
+      {
+        "reference_id": "m56cr0013",
+        "parent_content_id": "cnt:p5m56:000008",
+        "content_id": "cnt:p5m56:000006",
+        "order": 1,
+        "role": "review"
+      },
+      {
+        "reference_id": "m56cr0014",
+        "parent_content_id": "cnt:p5m56:000008",
+        "content_id": "cnt:p5m56:000009",
+        "order": 2,
+        "role": "primary"
+      },
+      {
+        "reference_id": "m56cr0015",
+        "parent_content_id": "cnt:p5m56:000008",
+        "content_id": "cnt:p5m56:000010",
+        "order": 3,
+        "role": "primary"
+      }
+    ]
+  },
+  "readiness": [
+    {
+      "id": "READY-P1-000001",
+      "from_candidate_id": "CAND-P1-000003",
+      "to_candidate_id": "CAND-P1-000004",
+      "relation": "strict",
+      "confidence": "provisional",
+      "scope": "positional or written arithmetic beyond small-number counting",
+      "authority": "src:p1:readiness-m1-5"
+    },
+    {
+      "id": "READY-P1-000006",
+      "from_candidate_id": "CAND-P1-000004",
+      "to_candidate_id": "CAND-P1-000009",
+      "relation": "strict",
+      "confidence": "provisional",
+      "scope": "signed-number operations and not first exposure to negative quantities",
+      "authority": "src:p1:readiness-m1-5"
+    }
+  ],
+  "formal_bindings": [
+    {
+      "content_id": "cnt:p5m56:000004",
+      "curriculum_candidate_id": "CAND-P1-000004",
+      "fart_id": "FART-P2-000004",
+      "floc_id": "FLOC-P2-000005",
+      "flink_id": "FLINK-P2-000004",
+      "disclosure": "scoped"
+    },
+    {
+      "content_id": "cnt:p5m56:000004",
+      "curriculum_candidate_id": "CAND-P1-000004",
+      "fart_id": "FART-P2-000005",
+      "floc_id": "FLOC-P2-000006",
+      "flink_id": "FLINK-P2-000005",
+      "disclosure": "scoped"
+    },
+    {
+      "content_id": "cnt:p5m56:000005",
+      "curriculum_candidate_id": "CAND-P1-000004",
+      "fart_id": "FART-P2-000006",
+      "floc_id": "FLOC-P2-000007",
+      "flink_id": "FLINK-P2-000006",
+      "disclosure": "scoped"
+    },
+    {
+      "content_id": "cnt:p5m56:000006",
+      "curriculum_candidate_id": "CAND-P1-000004",
+      "fart_id": "FART-P2-000010",
+      "floc_id": "FLOC-P2-000011",
+      "flink_id": "FLINK-P2-000010",
+      "disclosure": "exact"
+    },
+    {
+      "content_id": "cnt:p5m56:000009",
+      "curriculum_candidate_id": "CAND-P1-000009",
+      "fart_id": "FART-P2-000007",
+      "floc_id": "FLOC-P2-000008",
+      "flink_id": "FLINK-P2-000007",
+      "disclosure": "scoped"
+    },
+    {
+      "content_id": "cnt:p5m56:000009",
+      "curriculum_candidate_id": "CAND-P1-000009",
+      "fart_id": "FART-P2-000008",
+      "floc_id": "FLOC-P2-000009",
+      "flink_id": "FLINK-P2-000008",
+      "disclosure": "scoped"
+    },
+    {
+      "content_id": "cnt:p5m56:000010",
+      "curriculum_candidate_id": "CAND-P1-000009",
+      "fart_id": "FART-P2-000009",
+      "floc_id": "FLOC-P2-000010",
+      "flink_id": "FLINK-P2-000009",
+      "disclosure": "scoped"
+    },
+    {
+      "content_id": "cnt:p5m56:000013",
+      "curriculum_candidate_id": "CAND-P1-000016",
+      "fart_id": "FART-P2-000001",
+      "floc_id": "FLOC-P2-000001",
+      "flink_id": "FLINK-P2-000001",
+      "disclosure": "exact"
+    },
+    {
+      "content_id": "cnt:p5m56:000014",
+      "curriculum_candidate_id": "CAND-P1-000017",
+      "fart_id": "FART-P2-000002",
+      "floc_id": "FLOC-P2-000002",
+      "flink_id": "FLINK-P2-000002",
+      "disclosure": "exact"
+    },
+    {
+      "content_id": "cnt:p5m56:000015",
+      "curriculum_candidate_id": "CAND-P1-000017",
+      "fart_id": "FART-P2-000003",
+      "floc_id": "FLOC-P2-000004",
+      "flink_id": "FLINK-P2-000003",
+      "disclosure": "exact"
+    }
+  ],
+  "generated_dependency": {
+    "schema_version": "p5-m56-formal-dependency-fixture/v1",
+    "generator": "p5-m56-dependency-adapter/v1",
+    "content_id": "cnt:p5m56:000004",
+    "fart_id": "FART-P2-000005",
+    "floc_id": "FLOC-P2-000006",
+    "flink_id": "FLINK-P2-000005",
+    "module": "Mathlib.Algebra.Ring.Nat",
+    "declarations": [
+      "Nat.instDistrib"
+    ],
+    "expected_sha256": "f8c79c8d196952e4827c72d394039862935689b2e100f821697c41bad8cb1438",
+    "canonical_sha256": "f8c79c8d196952e4827c72d394039862935689b2e100f821697c41bad8cb1438"
+  },
+  "external_alignments": [
+    {
+      "content_id": "cnt:p5m56:000015",
+      "system": "ontomathpro",
+      "coverage_state": "needs_review",
+      "snapshot_state": "unavailable",
+      "disclosure": "No ingested exact OntoMathPRO snapshot or reviewed placement exists."
+    },
+    {
+      "content_id": "cnt:p5m56:000015",
+      "system": "msc2020",
+      "coverage_state": "needs_review",
+      "snapshot_state": "license_needs_review",
+      "disclosure": "MSC2020 remains link-only until redistribution and exact-snapshot review."
+    },
+    {
+      "content_id": "cnt:p5m56:000015",
+      "system": "arxiv",
+      "coverage_state": "unmapped",
+      "snapshot_state": "unavailable",
+      "disclosure": "No immutable normalized arXiv category snapshot or reviewed alignment exists."
+    }
+  ],
+  "external_payloads": []
+}

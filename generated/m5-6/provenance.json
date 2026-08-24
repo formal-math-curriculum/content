@@ -1,0 +1,25 @@
+{
+  "schema_version": "p5-m56-provenance/v1",
+  "generator": "p5-m56-generator/v1",
+  "source_identity": "P5-M5.6-CONTENT-v1",
+  "freeze_selector_sha256": "280ad055d9235077b398d26dd6abb40c9d13ae089ad6d5a8fd0b11baed805aaf",
+  "input_sha256": {
+    "source": "9ccc49a0c77b03ddf6a0c2b35c920a8499568afde9717821db33994f180a8fc7",
+    "formal_authority": "594616cedf0a52779f37cf5f54f6bfe301477f4d670f996c7c7b446b656f35fe"
+  },
+  "output_sha256": {
+    "content-manifest.json": "1662a01c8dbe5281464a1940c4d4f76257400abb5cac0ff2ca57023e7b3c4287",
+    "outline-manifest.json": "d96308762c79dcbff665d85182e8b63eb95a3ad9c41696a52cbfbc9802429aca",
+    "search-index.json": "3495630e3fad029f6d37b0241496e8c64883018c4554a37b913397da6044b061",
+    "publication.json": "8af33d089c11abea4da022cfe6669fc5b1a5aaa2c276339771b34b53b4b04519"
+  },
+  "exact_revisions": {
+    "site": "a263c9e5629728308911d993d97df74ff99f6e9a",
+    "content": "fb3df63b27ae54d4dc237a421dd241d4c59330e4",
+    "lean": "3f1a315f438af37a327eaf8b9b9c1dbc6f409394",
+    "lean_core": "d8b18978322de05a8f3dba51ef03cf5461676c17",
+    "mathlib": "db584cd6d46c92f209a44c0f1c829460d327499d"
+  },
+  "external_payload_count": 0,
+  "fixture_scope": "excluded-from-production-outputs"
+}

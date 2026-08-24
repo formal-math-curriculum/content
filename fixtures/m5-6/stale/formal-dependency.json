@@ -1,0 +1,7 @@
+{
+  "schema_version": "p5-m56-mutation/v1",
+  "mutation": "replace",
+  "path": "bases.mathlib",
+  "value": "0000000000000000000000000000000000000000",
+  "expected_error": "stale_dependency_revision"
+}

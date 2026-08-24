@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://formal-math-curriculum.github.io/schemas/p5-course-reference-v1.json",
+  "title": "P5 governed Course reference v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["reference_id", "parent_content_id", "content_id", "order", "role"],
+  "properties": {
+    "reference_id": { "type": "string", "pattern": "^m56cr[0-9]{4}$" },
+    "parent_content_id": { "type": "string", "minLength": 3 },
+    "content_id": { "type": "string", "minLength": 3 },
+    "order": { "type": "integer", "minimum": 0 },
+    "role": { "enum": ["primary", "review"] }
+  }
+}
