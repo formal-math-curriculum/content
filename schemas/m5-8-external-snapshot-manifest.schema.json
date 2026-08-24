@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://formal-math-curriculum.github.io/schemas/p5-m58-external-snapshot-policy-v1.json",
+  "title": "P5 M5.8 external snapshot policy v1",
+  "type": "object",
+  "additionalProperties": true,
+  "required": ["schema_version", "issue", "observed_on", "exact_bases", "authority", "systems", "linked_sources", "deployment_authorized"],
+  "properties": {
+    "schema_version": { "const": "p5-m58-external-snapshot-policy/v1" },
+    "issue": { "const": "MAT-367" },
+    "systems": {
+      "type": "array",
+      "minItems": 3,
+      "items": {
+        "type": "object",
+        "required": ["system", "upstream", "license", "qualification_state", "snapshot_state", "raw_preservation", "public_projection_eligible", "synthetic_fixture"]
+      }
+    },
+    "deployment_authorized": { "const": false }
+  }
+}

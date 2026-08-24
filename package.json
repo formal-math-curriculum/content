@@ -11,7 +11,8 @@
     "generate": "node scripts/generate-m5-6.mjs",
     "check:generated": "node scripts/generate-m5-6.mjs --check",
     "validate:m5-8-workflow": "node scripts/validate-m5-8-workflow.mjs source/m5-8/editorial-workflow-policy.json fixtures/m5-8/workflow-cases.json",
-    "validate": "node scripts/validate.mjs fixtures/minimal/manifest.json && node scripts/validate-m5-6.mjs && pnpm run validate:m5-8-workflow",
+    "validate:m5-8-snapshots": "node scripts/validate-m5-8-snapshots.mjs source/m5-8/external-snapshot-policy.json fixtures/m5-8/snapshot-cases.json",
+    "validate": "node scripts/validate.mjs fixtures/minimal/manifest.json && node scripts/validate-m5-6.mjs && pnpm run validate:m5-8-workflow && pnpm run validate:m5-8-snapshots",
     "test": "node --test tests/*.test.mjs"
   }
 }

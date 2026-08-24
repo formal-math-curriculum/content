@@ -1,0 +1,110 @@
+{
+  "schema_version": "p5-m58-external-snapshot-policy/v1",
+  "decision_id": "P5-M5.8-OPERATIONS-FREEZE-v1",
+  "issue": "MAT-367",
+  "observed_on": "2026-08-24",
+  "exact_bases": {
+    "content": "b266ee314ac34227ffddaf6a09a360814cee9cac",
+    "site": "1533b529fc2d7513fc51cdd28182f2a5eca65279",
+    "lean": "3f1a315f438af37a327eaf8b9b9c1dbc6f409394",
+    "mathlib": "db584cd6d46c92f209a44c0f1c829460d327499d"
+  },
+  "authority": {
+    "manifest_repository": "formal-math-curriculum/content",
+    "site_is_consumer": true,
+    "external_taxonomy_is_curriculum_authority": false,
+    "runtime_fetch_allowed": false,
+    "synthetic_fixture_may_establish_coverage": false
+  },
+  "systems": [
+    {
+      "system": "ontomathpro",
+      "upstream": {
+        "repository": "CLLKazan/OntoMathPro",
+        "revision": "ebb4083adec275e079bb6210df24cfcd11d2767c",
+        "version": "1.12.6",
+        "path": "OntoMathPro.omn",
+        "url": "https://raw.githubusercontent.com/CLLKazan/OntoMathPro/ebb4083adec275e079bb6210df24cfcd11d2767c/OntoMathPro.omn",
+        "git_blob": "e29f9ca0e765449d1df3a597ea3421e992f52e30",
+        "bytes": 1436718,
+        "sha256": "d8ceab757419a6ff07230342c47f4d49f8542ef998e0b052b31cde8fa5ab1c7f"
+      },
+      "license": {
+        "spdx": "Apache-2.0",
+        "url": "https://github.com/CLLKazan/OntoMathPro/blob/ebb4083adec275e079bb6210df24cfcd11d2767c/LICENSE",
+        "git_blob": "ad410e11302107da9aa47ce3d46bd5ad011c4c43",
+        "bytes": 11323,
+        "sha256": "6dc0e068dcf3a5bc8e054205b85b7720e1d49265bbc64bf515d2cf79197df69a",
+        "notice_file_present": false,
+        "attribution": "OntoMathPRO 1.12.6, Kazan Federal University research group, Apache License 2.0",
+        "modified_file_notice_required": true
+      },
+      "qualification_state": "source_and_license_qualified_not_ingested",
+      "snapshot_state": "unavailable",
+      "raw_preservation": "immutable_upstream_git_blob_only",
+      "public_projection_eligible": false,
+      "synthetic_fixture": false,
+      "limitations": ["No raw payload is vendored or released by this repository state.", "No mapping has been independently reviewed."]
+    },
+    {
+      "system": "msc2020",
+      "upstream": {
+        "url": "https://msc2020.org/MSC_2020.csv",
+        "version": "MSC2020",
+        "retrieval_result": "http_502",
+        "sha256": null,
+        "bytes": null
+      },
+      "license": {
+        "spdx": "CC-BY-NC-SA-4.0",
+        "url": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+        "publisher_url": "https://msc2020.org/",
+        "attribution": "Mathematics Subject Classification 2020, jointly published by Mathematical Reviews and zbMATH",
+        "noncommercial": true,
+        "sharealike": true
+      },
+      "qualification_state": "acquisition_failed_and_license_separation_needs_review",
+      "snapshot_state": "license_needs_review",
+      "raw_preservation": "none",
+      "public_projection_eligible": false,
+      "synthetic_fixture": false,
+      "limitations": ["The official CSV returned HTTP 502 during exact acquisition.", "No payload is redistributed under the repository CC0 license."]
+    },
+    {
+      "system": "arxiv",
+      "upstream": {
+        "url": "https://arxiv.org/category_taxonomy",
+        "terms_url": "https://info.arxiv.org/help/api/tou.html",
+        "retrieval_result": "observed",
+        "bytes": 83909,
+        "sha256": "b68362abee9154e329c56febfc6838748b128c3aebf5fc392849b2411301a931"
+      },
+      "license": {
+        "spdx": "CC0-1.0",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "terms_url": "https://info.arxiv.org/help/api/tou.html",
+        "attribution": "Category metadata from arXiv.org; no endorsement implied",
+        "classification_terms_are_descriptive_metadata": true,
+        "legacy_api_rate_limit": "one_request_per_three_seconds_single_connection"
+      },
+      "qualification_state": "license_qualified_raw_not_preserved",
+      "snapshot_state": "unavailable",
+      "raw_preservation": "hash_observed_only",
+      "public_projection_eligible": false,
+      "synthetic_fixture": false,
+      "limitations": ["The mutable HTML bytes are fingerprinted but not durably preserved.", "No mapping has been independently reviewed."]
+    }
+  ],
+  "linked_sources": [
+    {
+      "id": "openstax-prealgebra-2e",
+      "url": "https://openstax.org/books/prealgebra-2e/pages/preface",
+      "license": "CC-BY-NC-SA-4.0",
+      "disposition": "link_and_original_project_paraphrase_only",
+      "ingestion_allowed": false,
+      "attribution_required_if_redistributed": true,
+      "observed_restriction": "No LLM ingestion or training without OpenStax permission."
+    }
+  ],
+  "deployment_authorized": false
+}

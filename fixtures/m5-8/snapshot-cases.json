@@ -1,0 +1,15 @@
+{
+  "schema_version": "p5-m58-snapshot-cases/v1",
+  "cases": [
+    { "id": "S01-current-observed-policy", "expected": "pass", "mutations": [] },
+    { "id": "S02-current-without-durable-raw", "expected": "fail", "error_includes": "current snapshot requires durable raw preservation", "mutations": [{ "path": "systems.0.snapshot_state", "value": "current" }] },
+    { "id": "S03-msc-current-without-digest", "expected": "fail", "error_includes": "current snapshot requires exact raw bytes and SHA-256", "mutations": [{ "path": "systems.1.snapshot_state", "value": "current" }] },
+    { "id": "S04-malformed-observed-digest", "expected": "fail", "error_includes": "observed payload digest is invalid", "mutations": [{ "path": "systems.2.upstream.sha256", "value": "not-a-digest" }] },
+    { "id": "S05-synthetic-public-coverage", "expected": "fail", "error_includes": "synthetic fixture cannot establish public coverage", "mutations": [{ "path": "systems.0.synthetic_fixture", "value": true }, { "path": "systems.0.public_projection_eligible", "value": true }] },
+    { "id": "S06-runtime-taxonomy-fetch", "expected": "fail", "error_includes": "runtime taxonomy fetch is forbidden", "mutations": [{ "path": "authority.runtime_fetch_allowed", "value": true }] },
+    { "id": "S07-incompatible-schema", "expected": "fail", "error_includes": "unknown external snapshot policy schema", "mutations": [{ "path": "schema_version", "value": "p5-m58-external-snapshot-policy/v2" }] },
+    { "id": "S08-missing-attribution", "expected": "fail", "error_includes": "requires license and attribution", "mutations": [{ "path": "systems.0.license.attribution", "delete": true }] },
+    { "id": "S09-upstream-change-not-stale", "expected": "fail", "error_includes": "changed upstream must be stale", "mutations": [{ "path": "systems.0.snapshot_state", "value": "current" }, { "path": "systems.0.raw_preservation", "value": "content_repository" }, { "path": "systems.0.observed_upstream_revision", "value": "1111111111111111111111111111111111111111" }] },
+    { "id": "S10-openstax-ingestion", "expected": "fail", "error_includes": "OpenStax remains link/paraphrase only", "mutations": [{ "path": "linked_sources.0.ingestion_allowed", "value": true }] }
+  ]
+}
