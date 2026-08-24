@@ -1,0 +1,7 @@
+{
+  "schema_version": "p5-m56-mutation/v1",
+  "mutation": "replace",
+  "path": "course.references.12.content_id",
+  "value": "cnt:p5m56:999999",
+  "expected_error": "dangling_reference"
+}

@@ -1,0 +1,50 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://formal-math-curriculum.github.io/schemas/p5-editorial-record-v1.json",
+  "title": "P5 governed editorial record v1",
+  "type": "object",
+  "additionalProperties": true,
+  "required": ["content_id", "route_key", "kind", "title", "slug", "summary", "objectives", "source_refs", "maturity", "locales", "blocks"],
+  "properties": {
+    "content_id": { "type": "string", "minLength": 3 },
+    "route_key": { "type": "string", "pattern": "^[a-z0-9]{10,20}$" },
+    "kind": { "enum": ["definition", "theorem", "example", "exercise", "application", "editorial_unit", "learning_path", "module", "unit", "curriculum_reference"] },
+    "title": { "type": "string", "minLength": 1 },
+    "slug": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$" },
+    "summary": { "type": "string", "minLength": 1 },
+    "objectives": { "type": "array", "minItems": 1, "items": { "type": "string", "minLength": 1 } },
+    "source_refs": { "type": "array", "minItems": 1, "items": { "type": "string", "minLength": 1 } },
+    "blocks": { "type": "array", "items": { "$ref": "#/$defs/block" } }
+  },
+  "$defs": {
+    "block": {
+      "type": "object",
+      "additionalProperties": true,
+      "required": ["block_id", "title", "rendered", "latex", "formal_binding", "lean"],
+      "properties": {
+        "block_id": { "type": "string", "pattern": "^[A-Za-z0-9._-]+$" },
+        "title": { "type": "string", "minLength": 1 },
+        "rendered": { "type": "string", "minLength": 1 },
+        "latex": { "type": "string", "minLength": 1 },
+        "formal_binding": {
+          "type": "object",
+          "required": ["fart_id", "floc_id", "flink_id", "lean_state"],
+          "properties": {
+            "fart_id": { "pattern": "^FART-P2-[0-9]{6}$" },
+            "floc_id": { "pattern": "^FLOC-P2-[0-9]{6}$" },
+            "flink_id": { "pattern": "^FLINK-P2-[0-9]{6}$" },
+            "lean_state": { "enum": ["exact", "scoped", "related", "unreviewed", "unavailable", "stale", "incompatible"] }
+          }
+        },
+        "lean": {
+          "type": "object",
+          "required": ["source", "module", "declarations", "repository", "revision", "source_kind"],
+          "properties": {
+            "revision": { "type": "string", "pattern": "^[0-9a-f]{40}$" },
+            "declarations": { "type": "array", "minItems": 1, "items": { "type": "string", "minLength": 1 } }
+          }
+        }
+      }
+    }
+  }
+}

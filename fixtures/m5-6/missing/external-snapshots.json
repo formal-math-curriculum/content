@@ -1,0 +1,11 @@
+{
+  "schema_version": "p5-m56-missing-input/v1",
+  "external_payloads": [],
+  "expected_states": {
+    "ontomathpro": "unavailable",
+    "msc2020": "license_needs_review",
+    "arxiv": "unavailable"
+  },
+  "expected_effective_projection": "course",
+  "build_valid": true
+}

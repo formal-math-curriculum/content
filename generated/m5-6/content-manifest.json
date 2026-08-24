@@ -1,0 +1,519 @@
+{
+  "schema_version": "p5-content-manifest/v1",
+  "canonical_host": "https://formal-math-curriculum.github.io",
+  "source_identity": "P5-M5.6-CONTENT-v1",
+  "freeze_selector_sha256": "280ad055d9235077b398d26dd6abb40c9d13ae089ad6d5a8fd0b11baed805aaf",
+  "content": [
+    {
+      "content_id": "cnt:p5m56:000001",
+      "route_key": "p5m56c0001",
+      "kind": "learning_path",
+      "maturity": {
+        "editorial": "current_reviewed",
+        "formal": "not_applicable",
+        "publication": "candidate_not_deployed"
+      },
+      "locales": [
+        {
+          "locale": "en",
+          "slug": "arithmetic-to-algebra",
+          "translation_state": "current_reviewed",
+          "source_revision": "P5-M5.6-CONTENT-v1"
+        },
+        {
+          "locale": "pt",
+          "slug": "arithmetic-to-algebra",
+          "translation_state": "unavailable",
+          "source_revision": "P5-M5.6-SLICE-FREEZE-v1"
+        }
+      ]
+    },
+    {
+      "content_id": "cnt:p5m56:000002",
+      "route_key": "p5m56c0002",
+      "kind": "module",
+      "maturity": {
+        "editorial": "current_reviewed",
+        "formal": "not_applicable",
+        "publication": "candidate_not_deployed"
+      },
+      "locales": [
+        {
+          "locale": "en",
+          "slug": "natural-number-operations",
+          "translation_state": "current_reviewed",
+          "source_revision": "P5-M5.6-CONTENT-v1"
+        },
+        {
+          "locale": "pt",
+          "slug": "natural-number-operations",
+          "translation_state": "unavailable",
+          "source_revision": "P5-M5.6-SLICE-FREEZE-v1"
+        }
+      ]
+    },
+    {
+      "content_id": "cnt:p5m56:000003",
+      "route_key": "p5m56c0003",
+      "kind": "unit",
+      "maturity": {
+        "editorial": "current_reviewed",
+        "formal": "not_applicable",
+        "publication": "candidate_not_deployed"
+      },
+      "locales": [
+        {
+          "locale": "en",
+          "slug": "distribute-and-cancel",
+          "translation_state": "current_reviewed",
+          "source_revision": "P5-M5.6-CONTENT-v1"
+        },
+        {
+          "locale": "pt",
+          "slug": "distribute-and-cancel",
+          "translation_state": "unavailable",
+          "source_revision": "P5-M5.6-SLICE-FREEZE-v1"
+        }
+      ]
+    },
+    {
+      "content_id": "cnt:p5m56:000004",
+      "route_key": "p5m56c0004",
+      "kind": "editorial_unit",
+      "maturity": {
+        "editorial": "current_reviewed",
+        "formal": "release_qualified_bounded",
+        "publication": "candidate_not_deployed"
+      },
+      "locales": [
+        {
+          "locale": "en",
+          "slug": "natural-number-operation-laws",
+          "translation_state": "current_reviewed",
+          "source_revision": "P5-M5.6-CONTENT-v1"
+        },
+        {
+          "locale": "pt",
+          "slug": "natural-number-operation-laws",
+          "translation_state": "unavailable",
+          "source_revision": "P5-M5.6-SLICE-FREEZE-v1"
+        }
+      ]
+    },
+    {
+      "content_id": "cnt:p5m56:000005",
+      "route_key": "p5m56c0005",
+      "kind": "example",
+      "maturity": {
+        "editorial": "current_reviewed",
+        "formal": "release_qualified_example",
+        "publication": "candidate_not_deployed"
+      },
+      "locales": [
+        {
+          "locale": "en",
+          "slug": "natural-number-law-examples",
+          "translation_state": "current_reviewed",
+          "source_revision": "P5-M5.6-CONTENT-v1"
+        },
+        {
+          "locale": "pt",
+          "slug": "natural-number-law-examples",
+          "translation_state": "unavailable",
+          "source_revision": "P5-M5.6-SLICE-FREEZE-v1"
+        }
+      ]
+    },
+    {
+      "content_id": "cnt:p5m56:000006",
+      "route_key": "p5m56c0006",
+      "kind": "exercise",
+      "maturity": {
+        "editorial": "current_reviewed",
+        "formal": "release_qualified_exercise",
+        "publication": "candidate_not_deployed"
+      },
+      "locales": [
+        {
+          "locale": "en",
+          "slug": "distribute-and-cancel-exercise",
+          "translation_state": "current_reviewed",
+          "source_revision": "P5-M5.6-CONTENT-v1"
+        },
+        {
+          "locale": "pt",
+          "slug": "distribute-and-cancel-exercise",
+          "translation_state": "unavailable",
+          "source_revision": "P5-M5.6-SLICE-FREEZE-v1"
+        }
+      ]
+    },
+    {
+      "content_id": "cnt:p5m56:000007",
+      "route_key": "p5m56c0007",
+      "kind": "module",
+      "maturity": {
+        "editorial": "current_reviewed",
+        "formal": "not_applicable",
+        "publication": "candidate_not_deployed"
+      },
+      "locales": [
+        {
+          "locale": "en",
+          "slug": "signed-number-operations",
+          "translation_state": "current_reviewed",
+          "source_revision": "P5-M5.6-CONTENT-v1"
+        },
+        {
+          "locale": "pt",
+          "slug": "signed-number-operations",
+          "translation_state": "unavailable",
+          "source_revision": "P5-M5.6-SLICE-FREEZE-v1"
+        }
+      ]
+    },
+    {
+      "content_id": "cnt:p5m56:000008",
+      "route_key": "p5m56c0008",
+      "kind": "unit",
+      "maturity": {
+        "editorial": "current_reviewed",
+        "formal": "not_applicable",
+        "publication": "candidate_not_deployed"
+      },
+      "locales": [
+        {
+          "locale": "en",
+          "slug": "integer-sign-laws",
+          "translation_state": "current_reviewed",
+          "source_revision": "P5-M5.6-CONTENT-v1"
+        },
+        {
+          "locale": "pt",
+          "slug": "integer-sign-laws",
+          "translation_state": "unavailable",
+          "source_revision": "P5-M5.6-SLICE-FREEZE-v1"
+        }
+      ]
+    },
+    {
+      "content_id": "cnt:p5m56:000009",
+      "route_key": "p5m56c0009",
+      "kind": "editorial_unit",
+      "maturity": {
+        "editorial": "current_reviewed",
+        "formal": "release_qualified_bounded",
+        "publication": "candidate_not_deployed"
+      },
+      "locales": [
+        {
+          "locale": "en",
+          "slug": "integer-operation-and-sign-laws",
+          "translation_state": "current_reviewed",
+          "source_revision": "P5-M5.6-CONTENT-v1"
+        },
+        {
+          "locale": "pt",
+          "slug": "integer-operation-and-sign-laws",
+          "translation_state": "unavailable",
+          "source_revision": "P5-M5.6-SLICE-FREEZE-v1"
+        }
+      ]
+    },
+    {
+      "content_id": "cnt:p5m56:000010",
+      "route_key": "p5m56c0010",
+      "kind": "example",
+      "maturity": {
+        "editorial": "current_reviewed",
+        "formal": "release_qualified_example",
+        "publication": "candidate_not_deployed"
+      },
+      "locales": [
+        {
+          "locale": "en",
+          "slug": "integer-sign-law-examples",
+          "translation_state": "current_reviewed",
+          "source_revision": "P5-M5.6-CONTENT-v1"
+        },
+        {
+          "locale": "pt",
+          "slug": "integer-sign-law-examples",
+          "translation_state": "unavailable",
+          "source_revision": "P5-M5.6-SLICE-FREEZE-v1"
+        }
+      ]
+    },
+    {
+      "content_id": "cnt:p5m56:000011",
+      "route_key": "p5m56c0011",
+      "kind": "module",
+      "maturity": {
+        "editorial": "current_reviewed",
+        "formal": "not_applicable",
+        "publication": "candidate_not_deployed"
+      },
+      "locales": [
+        {
+          "locale": "en",
+          "slug": "factored-expressions-and-equations",
+          "translation_state": "current_reviewed",
+          "source_revision": "P5-M5.6-CONTENT-v1"
+        },
+        {
+          "locale": "pt",
+          "slug": "factored-expressions-and-equations",
+          "translation_state": "unavailable",
+          "source_revision": "P5-M5.6-SLICE-FREEZE-v1"
+        }
+      ]
+    },
+    {
+      "content_id": "cnt:p5m56:000012",
+      "route_key": "p5m56c0012",
+      "kind": "unit",
+      "maturity": {
+        "editorial": "current_reviewed",
+        "formal": "not_applicable",
+        "publication": "candidate_not_deployed"
+      },
+      "locales": [
+        {
+          "locale": "en",
+          "slug": "zero-product-method",
+          "translation_state": "current_reviewed",
+          "source_revision": "P5-M5.6-CONTENT-v1"
+        },
+        {
+          "locale": "pt",
+          "slug": "zero-product-method",
+          "translation_state": "unavailable",
+          "source_revision": "P5-M5.6-SLICE-FREEZE-v1"
+        }
+      ]
+    },
+    {
+      "content_id": "cnt:p5m56:000013",
+      "route_key": "p5m56c0013",
+      "kind": "definition",
+      "maturity": {
+        "editorial": "current_reviewed",
+        "formal": "release_qualified_exact",
+        "publication": "candidate_not_deployed"
+      },
+      "locales": [
+        {
+          "locale": "en",
+          "slug": "factored-integer-expression",
+          "translation_state": "current_reviewed",
+          "source_revision": "P5-M5.6-CONTENT-v1"
+        },
+        {
+          "locale": "pt",
+          "slug": "factored-integer-expression",
+          "translation_state": "unavailable",
+          "source_revision": "P5-M5.6-SLICE-FREEZE-v1"
+        }
+      ]
+    },
+    {
+      "content_id": "cnt:p5m56:000014",
+      "route_key": "p5m56c0014",
+      "kind": "theorem",
+      "maturity": {
+        "editorial": "current_reviewed",
+        "formal": "release_qualified_exact",
+        "publication": "candidate_not_deployed"
+      },
+      "locales": [
+        {
+          "locale": "en",
+          "slug": "zero-product-characterization",
+          "translation_state": "current_reviewed",
+          "source_revision": "P5-M5.6-CONTENT-v1"
+        },
+        {
+          "locale": "pt",
+          "slug": "zero-product-characterization",
+          "translation_state": "unavailable",
+          "source_revision": "P5-M5.6-SLICE-FREEZE-v1"
+        }
+      ]
+    },
+    {
+      "content_id": "cnt:p5m56:000015",
+      "route_key": "p5m56c0015",
+      "kind": "example",
+      "maturity": {
+        "editorial": "current_reviewed",
+        "formal": "release_qualified_example",
+        "publication": "candidate_not_deployed"
+      },
+      "locales": [
+        {
+          "locale": "en",
+          "slug": "roots-two-and-five-example",
+          "translation_state": "current_reviewed",
+          "source_revision": "P5-M5.6-CONTENT-v1"
+        },
+        {
+          "locale": "pt",
+          "slug": "roots-two-and-five-example",
+          "translation_state": "unavailable",
+          "source_revision": "P5-M5.6-SLICE-FREEZE-v1"
+        }
+      ]
+    }
+  ],
+  "routes": [
+    {
+      "content_id": "cnt:p5m56:000001",
+      "route_key": "p5m56c0001",
+      "locale": "en",
+      "path": "/content/p5m56c0001/arithmetic-to-algebra/",
+      "translation_state": "current_reviewed",
+      "hreflang_eligible": true
+    },
+    {
+      "content_id": "cnt:p5m56:000002",
+      "route_key": "p5m56c0002",
+      "locale": "en",
+      "path": "/content/p5m56c0002/natural-number-operations/",
+      "translation_state": "current_reviewed",
+      "hreflang_eligible": true
+    },
+    {
+      "content_id": "cnt:p5m56:000003",
+      "route_key": "p5m56c0003",
+      "locale": "en",
+      "path": "/content/p5m56c0003/distribute-and-cancel/",
+      "translation_state": "current_reviewed",
+      "hreflang_eligible": true
+    },
+    {
+      "content_id": "cnt:p5m56:000004",
+      "route_key": "p5m56c0004",
+      "locale": "en",
+      "path": "/content/p5m56c0004/natural-number-operation-laws/",
+      "translation_state": "current_reviewed",
+      "hreflang_eligible": true
+    },
+    {
+      "content_id": "cnt:p5m56:000005",
+      "route_key": "p5m56c0005",
+      "locale": "en",
+      "path": "/content/p5m56c0005/natural-number-law-examples/",
+      "translation_state": "current_reviewed",
+      "hreflang_eligible": true
+    },
+    {
+      "content_id": "cnt:p5m56:000006",
+      "route_key": "p5m56c0006",
+      "locale": "en",
+      "path": "/content/p5m56c0006/distribute-and-cancel-exercise/",
+      "translation_state": "current_reviewed",
+      "hreflang_eligible": true
+    },
+    {
+      "content_id": "cnt:p5m56:000007",
+      "route_key": "p5m56c0007",
+      "locale": "en",
+      "path": "/content/p5m56c0007/signed-number-operations/",
+      "translation_state": "current_reviewed",
+      "hreflang_eligible": true
+    },
+    {
+      "content_id": "cnt:p5m56:000008",
+      "route_key": "p5m56c0008",
+      "locale": "en",
+      "path": "/content/p5m56c0008/integer-sign-laws/",
+      "translation_state": "current_reviewed",
+      "hreflang_eligible": true
+    },
+    {
+      "content_id": "cnt:p5m56:000009",
+      "route_key": "p5m56c0009",
+      "locale": "en",
+      "path": "/content/p5m56c0009/integer-operation-and-sign-laws/",
+      "translation_state": "current_reviewed",
+      "hreflang_eligible": true
+    },
+    {
+      "content_id": "cnt:p5m56:000010",
+      "route_key": "p5m56c0010",
+      "locale": "en",
+      "path": "/content/p5m56c0010/integer-sign-law-examples/",
+      "translation_state": "current_reviewed",
+      "hreflang_eligible": true
+    },
+    {
+      "content_id": "cnt:p5m56:000011",
+      "route_key": "p5m56c0011",
+      "locale": "en",
+      "path": "/content/p5m56c0011/factored-expressions-and-equations/",
+      "translation_state": "current_reviewed",
+      "hreflang_eligible": true
+    },
+    {
+      "content_id": "cnt:p5m56:000012",
+      "route_key": "p5m56c0012",
+      "locale": "en",
+      "path": "/content/p5m56c0012/zero-product-method/",
+      "translation_state": "current_reviewed",
+      "hreflang_eligible": true
+    },
+    {
+      "content_id": "cnt:p5m56:000013",
+      "route_key": "p5m56c0013",
+      "locale": "en",
+      "path": "/content/p5m56c0013/factored-integer-expression/",
+      "translation_state": "current_reviewed",
+      "hreflang_eligible": true
+    },
+    {
+      "content_id": "cnt:p5m56:000014",
+      "route_key": "p5m56c0014",
+      "locale": "en",
+      "path": "/content/p5m56c0014/zero-product-characterization/",
+      "translation_state": "current_reviewed",
+      "hreflang_eligible": true
+    },
+    {
+      "content_id": "cnt:p5m56:000015",
+      "route_key": "p5m56c0015",
+      "locale": "en",
+      "path": "/content/p5m56c0015/roots-two-and-five-example/",
+      "translation_state": "current_reviewed",
+      "hreflang_eligible": true
+    }
+  ],
+  "redirects": [],
+  "projections": [
+    {
+      "key": "course",
+      "state": "current",
+      "default": true
+    },
+    {
+      "key": "ontomathpro",
+      "state": "unavailable",
+      "default": false
+    },
+    {
+      "key": "msc2020",
+      "state": "license_needs_review",
+      "default": false
+    },
+    {
+      "key": "arxiv",
+      "state": "unavailable",
+      "default": false
+    },
+    {
+      "key": "lean-mathlib",
+      "state": "current",
+      "default": false
+    }
+  ],
+  "external_payloads": []
+}

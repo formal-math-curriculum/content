@@ -1,0 +1,1241 @@
+{
+  "schemaVersion": "p5-outline-manifest/v1",
+  "locale": "en",
+  "currentContent": {
+    "contentId": "cnt:p5m56:000004",
+    "canonicalRoute": "/content/p5m56c0004/natural-number-operation-laws/"
+  },
+  "universalFilterSchema": [
+    {
+      "id": "coverage",
+      "label": "Mapping state",
+      "mode": "multi",
+      "options": [
+        {
+          "id": "mapped",
+          "label": "Mapped"
+        },
+        {
+          "id": "partial",
+          "label": "Partially mapped"
+        },
+        {
+          "id": "review",
+          "label": "Needs review"
+        },
+        {
+          "id": "unmapped",
+          "label": "Unmapped"
+        }
+      ]
+    },
+    {
+      "id": "content-kind",
+      "label": "Content kind",
+      "mode": "multi",
+      "options": [
+        {
+          "id": "definition",
+          "label": "Definition"
+        },
+        {
+          "id": "theorem",
+          "label": "Theorem"
+        },
+        {
+          "id": "example",
+          "label": "Example"
+        },
+        {
+          "id": "exercise",
+          "label": "Exercise"
+        },
+        {
+          "id": "editorial-unit",
+          "label": "Editorial unit"
+        },
+        {
+          "id": "structure",
+          "label": "Course structure"
+        }
+      ]
+    },
+    {
+      "id": "formalization",
+      "label": "Formalization",
+      "mode": "multi",
+      "options": [
+        {
+          "id": "current",
+          "label": "Current"
+        },
+        {
+          "id": "unavailable",
+          "label": "Unavailable"
+        }
+      ]
+    },
+    {
+      "id": "correspondence",
+      "label": "Correspondence",
+      "mode": "multi",
+      "options": [
+        {
+          "id": "exact",
+          "label": "Exact"
+        },
+        {
+          "id": "scoped",
+          "label": "Scoped"
+        },
+        {
+          "id": "unavailable",
+          "label": "Unavailable"
+        }
+      ]
+    },
+    {
+      "id": "translation",
+      "label": "Translation",
+      "mode": "multi",
+      "options": [
+        {
+          "id": "current",
+          "label": "English current"
+        },
+        {
+          "id": "unavailable",
+          "label": "Portuguese unavailable"
+        }
+      ]
+    }
+  ],
+  "projections": [
+    {
+      "id": "course",
+      "label": "Course",
+      "kind": "course-pedagogy",
+      "state": "current",
+      "fingerprint": "sha256:6df7b4108e2ce82992754b5df24e9cac764197f3c70c05d2e77262dd4d702d5e",
+      "landingRoute": "/outline/course/",
+      "rootMode": "pedagogical",
+      "activeReferenceId": "m56cr0003",
+      "structuralFilterSchema": [
+        {
+          "id": "module",
+          "label": "Module",
+          "mode": "multi",
+          "options": [
+            {
+              "id": "natural-number-operations",
+              "label": "Natural-number operations"
+            },
+            {
+              "id": "signed-number-operations",
+              "label": "Signed-number operations"
+            },
+            {
+              "id": "factored-expressions-and-equations",
+              "label": "Factored expressions and equations"
+            }
+          ]
+        },
+        {
+          "id": "unit",
+          "label": "Unit",
+          "mode": "multi",
+          "options": [
+            {
+              "id": "distribute-and-cancel",
+              "label": "Distribute and cancel"
+            },
+            {
+              "id": "integer-sign-laws",
+              "label": "Integer sign laws"
+            },
+            {
+              "id": "zero-product-method",
+              "label": "Zero-product method"
+            }
+          ]
+        }
+      ],
+      "placements": [
+        {
+          "referenceId": "m56root0001",
+          "parentReferenceId": null,
+          "kind": "group",
+          "label": "Arithmetic to algebra",
+          "order": 0,
+          "state": "mapped",
+          "contentId": "cnt:p5m56:000001",
+          "canonicalRoute": "/content/p5m56c0001/arithmetic-to-algebra/",
+          "aliases": [
+            "arithmetic-to-algebra"
+          ],
+          "universalTokens": {
+            "coverage": [
+              "mapped"
+            ],
+            "content-kind": [
+              "structure"
+            ],
+            "formalization": [
+              "unavailable"
+            ],
+            "correspondence": [
+              "unavailable"
+            ],
+            "translation": [
+              "current",
+              "unavailable"
+            ]
+          },
+          "structuralTokens": {}
+        },
+        {
+          "referenceId": "m56cr0001",
+          "parentReferenceId": "m56root0001",
+          "kind": "group",
+          "label": "Natural-number operations",
+          "order": 1,
+          "state": "mapped",
+          "contentId": "cnt:p5m56:000002",
+          "canonicalRoute": "/content/p5m56c0002/natural-number-operations/",
+          "aliases": [
+            "natural-number-operations"
+          ],
+          "universalTokens": {
+            "coverage": [
+              "mapped"
+            ],
+            "content-kind": [
+              "structure"
+            ],
+            "formalization": [
+              "unavailable"
+            ],
+            "correspondence": [
+              "unavailable"
+            ],
+            "translation": [
+              "current",
+              "unavailable"
+            ]
+          },
+          "structuralTokens": {
+            "module": [
+              "natural-number-operations"
+            ]
+          }
+        },
+        {
+          "referenceId": "m56cr0002",
+          "parentReferenceId": "m56cr0001",
+          "kind": "presentation-heading",
+          "label": "Distribute and cancel",
+          "order": 1,
+          "state": "mapped",
+          "contentId": "cnt:p5m56:000003",
+          "canonicalRoute": "/content/p5m56c0003/distribute-and-cancel/",
+          "aliases": [
+            "distribute-and-cancel"
+          ],
+          "universalTokens": {
+            "coverage": [
+              "mapped"
+            ],
+            "content-kind": [
+              "structure"
+            ],
+            "formalization": [
+              "unavailable"
+            ],
+            "correspondence": [
+              "unavailable"
+            ],
+            "translation": [
+              "current",
+              "unavailable"
+            ]
+          },
+          "structuralTokens": {
+            "module": [
+              "natural-number-operations"
+            ],
+            "unit": [
+              "distribute-and-cancel"
+            ]
+          }
+        },
+        {
+          "referenceId": "m56cr0003",
+          "parentReferenceId": "m56cr0002",
+          "kind": "reference",
+          "label": "Natural-number operation laws",
+          "order": 1,
+          "state": "mapped",
+          "contentId": "cnt:p5m56:000004",
+          "canonicalRoute": "/content/p5m56c0004/natural-number-operation-laws/",
+          "aliases": [
+            "natural-number-operation-laws",
+            "CAND-P1-000004",
+            "distributive",
+            "distributivity",
+            "Nat.instDistrib",
+            "natural number laws",
+            "FART-P2-000004",
+            "FART-P2-000005"
+          ],
+          "universalTokens": {
+            "coverage": [
+              "mapped"
+            ],
+            "content-kind": [
+              "editorial-unit"
+            ],
+            "formalization": [
+              "current"
+            ],
+            "correspondence": [
+              "scoped"
+            ],
+            "translation": [
+              "current",
+              "unavailable"
+            ]
+          },
+          "structuralTokens": {
+            "module": [
+              "natural-number-operations"
+            ],
+            "unit": [
+              "distribute-and-cancel"
+            ]
+          }
+        },
+        {
+          "referenceId": "m56cr0004",
+          "parentReferenceId": "m56cr0002",
+          "kind": "reference",
+          "label": "Natural-number law examples",
+          "order": 2,
+          "state": "mapped",
+          "contentId": "cnt:p5m56:000005",
+          "canonicalRoute": "/content/p5m56c0005/natural-number-law-examples/",
+          "aliases": [
+            "natural-number-law-examples",
+            "CAND-P1-000004",
+            "distribute",
+            "cancel",
+            "cancellation",
+            "FART-P2-000006"
+          ],
+          "universalTokens": {
+            "coverage": [
+              "mapped"
+            ],
+            "content-kind": [
+              "example"
+            ],
+            "formalization": [
+              "current"
+            ],
+            "correspondence": [
+              "scoped"
+            ],
+            "translation": [
+              "current",
+              "unavailable"
+            ]
+          },
+          "structuralTokens": {
+            "module": [
+              "natural-number-operations"
+            ],
+            "unit": [
+              "distribute-and-cancel"
+            ]
+          }
+        },
+        {
+          "referenceId": "m56cr0005",
+          "parentReferenceId": "m56cr0002",
+          "kind": "reference",
+          "label": "Distribute-and-cancel exercise",
+          "order": 3,
+          "state": "mapped",
+          "contentId": "cnt:p5m56:000006",
+          "canonicalRoute": "/content/p5m56c0006/distribute-and-cancel-exercise/",
+          "aliases": [
+            "distribute-and-cancel-exercise",
+            "CAND-P1-000004",
+            "distributive",
+            "distribute",
+            "cancel",
+            "exercise",
+            "FART-P2-000010"
+          ],
+          "universalTokens": {
+            "coverage": [
+              "mapped"
+            ],
+            "content-kind": [
+              "exercise"
+            ],
+            "formalization": [
+              "current"
+            ],
+            "correspondence": [
+              "exact"
+            ],
+            "translation": [
+              "current",
+              "unavailable"
+            ]
+          },
+          "structuralTokens": {
+            "module": [
+              "natural-number-operations"
+            ],
+            "unit": [
+              "distribute-and-cancel"
+            ]
+          }
+        },
+        {
+          "referenceId": "m56cr0006",
+          "parentReferenceId": "m56root0001",
+          "kind": "group",
+          "label": "Factored expressions and equations",
+          "order": 2,
+          "state": "mapped",
+          "contentId": "cnt:p5m56:000011",
+          "canonicalRoute": "/content/p5m56c0011/factored-expressions-and-equations/",
+          "aliases": [
+            "factored-expressions-and-equations"
+          ],
+          "universalTokens": {
+            "coverage": [
+              "mapped"
+            ],
+            "content-kind": [
+              "structure"
+            ],
+            "formalization": [
+              "unavailable"
+            ],
+            "correspondence": [
+              "unavailable"
+            ],
+            "translation": [
+              "current",
+              "unavailable"
+            ]
+          },
+          "structuralTokens": {
+            "module": [
+              "factored-expressions-and-equations"
+            ]
+          }
+        },
+        {
+          "referenceId": "m56cr0007",
+          "parentReferenceId": "m56cr0006",
+          "kind": "presentation-heading",
+          "label": "Zero-product method",
+          "order": 1,
+          "state": "mapped",
+          "contentId": "cnt:p5m56:000012",
+          "canonicalRoute": "/content/p5m56c0012/zero-product-method/",
+          "aliases": [
+            "zero-product-method"
+          ],
+          "universalTokens": {
+            "coverage": [
+              "mapped"
+            ],
+            "content-kind": [
+              "structure"
+            ],
+            "formalization": [
+              "unavailable"
+            ],
+            "correspondence": [
+              "unavailable"
+            ],
+            "translation": [
+              "current",
+              "unavailable"
+            ]
+          },
+          "structuralTokens": {
+            "module": [
+              "factored-expressions-and-equations"
+            ],
+            "unit": [
+              "zero-product-method"
+            ]
+          }
+        },
+        {
+          "referenceId": "m56cr0008",
+          "parentReferenceId": "m56cr0007",
+          "kind": "reference",
+          "label": "Factored integer expression",
+          "order": 1,
+          "state": "mapped",
+          "contentId": "cnt:p5m56:000013",
+          "canonicalRoute": "/content/p5m56c0013/factored-integer-expression/",
+          "aliases": [
+            "factored-integer-expression",
+            "CAND-P1-000016",
+            "FART-P2-000001"
+          ],
+          "universalTokens": {
+            "coverage": [
+              "mapped"
+            ],
+            "content-kind": [
+              "definition"
+            ],
+            "formalization": [
+              "current"
+            ],
+            "correspondence": [
+              "exact"
+            ],
+            "translation": [
+              "current",
+              "unavailable"
+            ]
+          },
+          "structuralTokens": {
+            "module": [
+              "factored-expressions-and-equations"
+            ],
+            "unit": [
+              "zero-product-method"
+            ]
+          }
+        },
+        {
+          "referenceId": "m56cr0009",
+          "parentReferenceId": "m56cr0007",
+          "kind": "reference",
+          "label": "Zero-product characterization",
+          "order": 2,
+          "state": "mapped",
+          "contentId": "cnt:p5m56:000014",
+          "canonicalRoute": "/content/p5m56c0014/zero-product-characterization/",
+          "aliases": [
+            "zero-product-characterization",
+            "CAND-P1-000017",
+            "FART-P2-000002"
+          ],
+          "universalTokens": {
+            "coverage": [
+              "mapped"
+            ],
+            "content-kind": [
+              "theorem"
+            ],
+            "formalization": [
+              "current"
+            ],
+            "correspondence": [
+              "exact"
+            ],
+            "translation": [
+              "current",
+              "unavailable"
+            ]
+          },
+          "structuralTokens": {
+            "module": [
+              "factored-expressions-and-equations"
+            ],
+            "unit": [
+              "zero-product-method"
+            ]
+          }
+        },
+        {
+          "referenceId": "m56cr0010",
+          "parentReferenceId": "m56cr0007",
+          "kind": "reference",
+          "label": "Roots two and five",
+          "order": 3,
+          "state": "mapped",
+          "contentId": "cnt:p5m56:000015",
+          "canonicalRoute": "/content/p5m56c0015/roots-two-and-five-example/",
+          "aliases": [
+            "roots-two-and-five-example",
+            "CAND-P1-000017",
+            "FART-P2-000003"
+          ],
+          "universalTokens": {
+            "coverage": [
+              "mapped"
+            ],
+            "content-kind": [
+              "example"
+            ],
+            "formalization": [
+              "current"
+            ],
+            "correspondence": [
+              "exact"
+            ],
+            "translation": [
+              "current",
+              "unavailable"
+            ]
+          },
+          "structuralTokens": {
+            "module": [
+              "factored-expressions-and-equations"
+            ],
+            "unit": [
+              "zero-product-method"
+            ]
+          }
+        },
+        {
+          "referenceId": "m56cr0011",
+          "parentReferenceId": "m56root0001",
+          "kind": "group",
+          "label": "Signed-number operations",
+          "order": 3,
+          "state": "mapped",
+          "contentId": "cnt:p5m56:000007",
+          "canonicalRoute": "/content/p5m56c0007/signed-number-operations/",
+          "aliases": [
+            "signed-number-operations"
+          ],
+          "universalTokens": {
+            "coverage": [
+              "mapped"
+            ],
+            "content-kind": [
+              "structure"
+            ],
+            "formalization": [
+              "unavailable"
+            ],
+            "correspondence": [
+              "unavailable"
+            ],
+            "translation": [
+              "current",
+              "unavailable"
+            ]
+          },
+          "structuralTokens": {
+            "module": [
+              "signed-number-operations"
+            ]
+          }
+        },
+        {
+          "referenceId": "m56cr0012",
+          "parentReferenceId": "m56cr0011",
+          "kind": "presentation-heading",
+          "label": "Integer sign laws",
+          "order": 1,
+          "state": "mapped",
+          "contentId": "cnt:p5m56:000008",
+          "canonicalRoute": "/content/p5m56c0008/integer-sign-laws/",
+          "aliases": [
+            "integer-sign-laws"
+          ],
+          "universalTokens": {
+            "coverage": [
+              "mapped"
+            ],
+            "content-kind": [
+              "structure"
+            ],
+            "formalization": [
+              "unavailable"
+            ],
+            "correspondence": [
+              "unavailable"
+            ],
+            "translation": [
+              "current",
+              "unavailable"
+            ]
+          },
+          "structuralTokens": {
+            "module": [
+              "signed-number-operations"
+            ],
+            "unit": [
+              "integer-sign-laws"
+            ]
+          }
+        },
+        {
+          "referenceId": "m56cr0013",
+          "parentReferenceId": "m56cr0012",
+          "kind": "reference",
+          "label": "Distribute-and-cancel exercise (review)",
+          "order": 1,
+          "state": "mapped",
+          "contentId": "cnt:p5m56:000006",
+          "canonicalRoute": "/content/p5m56c0006/distribute-and-cancel-exercise/",
+          "aliases": [
+            "distribute-and-cancel-exercise",
+            "CAND-P1-000004",
+            "distributive",
+            "distribute",
+            "cancel",
+            "exercise",
+            "FART-P2-000010"
+          ],
+          "universalTokens": {
+            "coverage": [
+              "mapped"
+            ],
+            "content-kind": [
+              "exercise"
+            ],
+            "formalization": [
+              "current"
+            ],
+            "correspondence": [
+              "exact"
+            ],
+            "translation": [
+              "current",
+              "unavailable"
+            ]
+          },
+          "structuralTokens": {
+            "module": [
+              "signed-number-operations"
+            ],
+            "unit": [
+              "integer-sign-laws"
+            ]
+          }
+        },
+        {
+          "referenceId": "m56cr0014",
+          "parentReferenceId": "m56cr0012",
+          "kind": "reference",
+          "label": "Integer operation and sign laws",
+          "order": 2,
+          "state": "mapped",
+          "contentId": "cnt:p5m56:000009",
+          "canonicalRoute": "/content/p5m56c0009/integer-operation-and-sign-laws/",
+          "aliases": [
+            "integer-operation-and-sign-laws",
+            "CAND-P1-000009",
+            "FART-P2-000007",
+            "FART-P2-000008"
+          ],
+          "universalTokens": {
+            "coverage": [
+              "mapped"
+            ],
+            "content-kind": [
+              "editorial-unit"
+            ],
+            "formalization": [
+              "current"
+            ],
+            "correspondence": [
+              "scoped"
+            ],
+            "translation": [
+              "current",
+              "unavailable"
+            ]
+          },
+          "structuralTokens": {
+            "module": [
+              "signed-number-operations"
+            ],
+            "unit": [
+              "integer-sign-laws"
+            ]
+          }
+        },
+        {
+          "referenceId": "m56cr0015",
+          "parentReferenceId": "m56cr0012",
+          "kind": "reference",
+          "label": "Integer sign-law examples",
+          "order": 3,
+          "state": "mapped",
+          "contentId": "cnt:p5m56:000010",
+          "canonicalRoute": "/content/p5m56c0010/integer-sign-law-examples/",
+          "aliases": [
+            "integer-sign-law-examples",
+            "CAND-P1-000009",
+            "FART-P2-000009"
+          ],
+          "universalTokens": {
+            "coverage": [
+              "mapped"
+            ],
+            "content-kind": [
+              "example"
+            ],
+            "formalization": [
+              "current"
+            ],
+            "correspondence": [
+              "scoped"
+            ],
+            "translation": [
+              "current",
+              "unavailable"
+            ]
+          },
+          "structuralTokens": {
+            "module": [
+              "signed-number-operations"
+            ],
+            "unit": [
+              "integer-sign-laws"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "ontomathpro",
+      "label": "OntoMathPRO",
+      "kind": "ontomathpro-polyhierarchy",
+      "state": "unavailable",
+      "fingerprint": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "landingRoute": "/outline/ontomathpro/",
+      "rootMode": "multiple-parents",
+      "activeReferenceId": null,
+      "structuralFilterSchema": [
+        {
+          "id": "onto-snapshot",
+          "label": "OntoMathPRO snapshot",
+          "mode": "multi",
+          "options": [
+            {
+              "id": "unavailable",
+              "label": "Unavailable"
+            }
+          ]
+        }
+      ],
+      "placements": []
+    },
+    {
+      "id": "msc2020",
+      "label": "MSC 2020",
+      "kind": "msc2020-classification",
+      "state": "license-needs-review",
+      "fingerprint": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "landingRoute": "/outline/msc2020/",
+      "rootMode": "classification-codes",
+      "activeReferenceId": null,
+      "structuralFilterSchema": [
+        {
+          "id": "msc-snapshot",
+          "label": "MSC snapshot",
+          "mode": "multi",
+          "options": [
+            {
+              "id": "unavailable",
+              "label": "Unavailable"
+            }
+          ]
+        }
+      ],
+      "placements": []
+    },
+    {
+      "id": "arxiv",
+      "label": "arXiv",
+      "kind": "arxiv-shallow-category",
+      "state": "unavailable",
+      "fingerprint": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "landingRoute": "/outline/arxiv/",
+      "rootMode": "shallow-categories",
+      "activeReferenceId": null,
+      "structuralFilterSchema": [
+        {
+          "id": "arxiv-snapshot",
+          "label": "arXiv snapshot",
+          "mode": "multi",
+          "options": [
+            {
+              "id": "unavailable",
+              "label": "Unavailable"
+            }
+          ]
+        }
+      ],
+      "placements": []
+    },
+    {
+      "id": "lean-mathlib",
+      "label": "Lean / mathlib",
+      "kind": "lean-content-drilldown",
+      "state": "current",
+      "fingerprint": "sha256:8b87ee5aacedf80229762b702c478fef79475704540d526506298a2a82191d7b",
+      "landingRoute": "/outline/lean-mathlib/",
+      "rootMode": "content-centered",
+      "activeReferenceId": "m56leandecl0201",
+      "structuralFilterSchema": [
+        {
+          "id": "lean-level",
+          "label": "Lean drilldown level",
+          "mode": "multi",
+          "options": [
+            {
+              "id": "artifact",
+              "label": "Artifact"
+            },
+            {
+              "id": "module",
+              "label": "Module"
+            },
+            {
+              "id": "declaration",
+              "label": "Declaration"
+            }
+          ]
+        },
+        {
+          "id": "lean-source",
+          "label": "Formal source",
+          "mode": "multi",
+          "options": [
+            {
+              "id": "project",
+              "label": "Project"
+            },
+            {
+              "id": "dependency",
+              "label": "Dependency"
+            }
+          ]
+        }
+      ],
+      "placements": [
+        {
+          "referenceId": "m56leanroot",
+          "parentReferenceId": null,
+          "kind": "group",
+          "label": "Natural-number operation laws",
+          "order": 0,
+          "state": "mapped",
+          "contentId": "cnt:p5m56:000004",
+          "canonicalRoute": "/content/p5m56c0004/natural-number-operation-laws/",
+          "aliases": [
+            "natural-number-operation-laws",
+            "CAND-P1-000004"
+          ],
+          "universalTokens": {
+            "coverage": [
+              "mapped"
+            ],
+            "content-kind": [
+              "editorial-unit"
+            ],
+            "formalization": [
+              "current"
+            ],
+            "correspondence": [
+              "scoped"
+            ],
+            "translation": [
+              "current",
+              "unavailable"
+            ]
+          },
+          "structuralTokens": {}
+        },
+        {
+          "referenceId": "m56leanartifact01",
+          "parentReferenceId": "m56leanroot",
+          "kind": "artifact",
+          "label": "FART-P2-000004 — Natural-number additive and multiplicative monoid laws",
+          "order": 0,
+          "state": "mapped",
+          "contentId": "formal:FART-P2-000004",
+          "canonicalRoute": "/formal/fart-p2-000004/",
+          "aliases": [
+            "FART-P2-000004",
+            "FLINK-P2-000004"
+          ],
+          "universalTokens": {
+            "coverage": [
+              "mapped"
+            ],
+            "content-kind": [
+              "editorial-unit"
+            ],
+            "formalization": [
+              "current"
+            ],
+            "correspondence": [
+              "scoped"
+            ],
+            "translation": [
+              "current",
+              "unavailable"
+            ]
+          },
+          "structuralTokens": {
+            "lean-level": [
+              "artifact"
+            ],
+            "lean-source": [
+              "dependency"
+            ]
+          }
+        },
+        {
+          "referenceId": "m56leanmodule01",
+          "parentReferenceId": "m56leanartifact01",
+          "kind": "module",
+          "label": "Mathlib.Algebra.Group.Nat.Defs",
+          "order": 0,
+          "state": "mapped",
+          "contentId": "formal:module:Mathlib.Algebra.Group.Nat.Defs",
+          "canonicalRoute": "/formal/module/mathlib/algebra/group/nat/defs/",
+          "aliases": [
+            "Mathlib/Algebra/Group/Nat/Defs.lean"
+          ],
+          "universalTokens": {
+            "coverage": [
+              "mapped"
+            ],
+            "content-kind": [
+              "editorial-unit"
+            ],
+            "formalization": [
+              "current"
+            ],
+            "correspondence": [
+              "scoped"
+            ],
+            "translation": [
+              "current",
+              "unavailable"
+            ]
+          },
+          "structuralTokens": {
+            "lean-level": [
+              "module"
+            ],
+            "lean-source": [
+              "dependency"
+            ]
+          }
+        },
+        {
+          "referenceId": "m56leandecl0101",
+          "parentReferenceId": "m56leanmodule01",
+          "kind": "declaration",
+          "label": "Nat.instAddCancelCommMonoid",
+          "order": 0,
+          "state": "mapped",
+          "contentId": "cnt:p5m56:000004",
+          "canonicalRoute": "/content/p5m56c0004/natural-number-operation-laws/",
+          "aliases": [
+            "FLOC-P2-000005",
+            "Nat.instAddCancelCommMonoid"
+          ],
+          "universalTokens": {
+            "coverage": [
+              "mapped"
+            ],
+            "content-kind": [
+              "editorial-unit"
+            ],
+            "formalization": [
+              "current"
+            ],
+            "correspondence": [
+              "scoped"
+            ],
+            "translation": [
+              "current",
+              "unavailable"
+            ]
+          },
+          "structuralTokens": {
+            "lean-level": [
+              "declaration"
+            ],
+            "lean-source": [
+              "dependency"
+            ]
+          }
+        },
+        {
+          "referenceId": "m56leandecl0102",
+          "parentReferenceId": "m56leanmodule01",
+          "kind": "declaration",
+          "label": "Nat.instCommMonoid",
+          "order": 1,
+          "state": "mapped",
+          "contentId": "cnt:p5m56:000004",
+          "canonicalRoute": "/content/p5m56c0004/natural-number-operation-laws/",
+          "aliases": [
+            "FLOC-P2-000005",
+            "Nat.instCommMonoid"
+          ],
+          "universalTokens": {
+            "coverage": [
+              "mapped"
+            ],
+            "content-kind": [
+              "editorial-unit"
+            ],
+            "formalization": [
+              "current"
+            ],
+            "correspondence": [
+              "scoped"
+            ],
+            "translation": [
+              "current",
+              "unavailable"
+            ]
+          },
+          "structuralTokens": {
+            "lean-level": [
+              "declaration"
+            ],
+            "lean-source": [
+              "dependency"
+            ]
+          }
+        },
+        {
+          "referenceId": "m56leanartifact02",
+          "parentReferenceId": "m56leanroot",
+          "kind": "artifact",
+          "label": "FART-P2-000005 — Natural-number distributive laws",
+          "order": 1,
+          "state": "mapped",
+          "contentId": "formal:FART-P2-000005",
+          "canonicalRoute": "/formal/fart-p2-000005/",
+          "aliases": [
+            "FART-P2-000005",
+            "FLINK-P2-000005"
+          ],
+          "universalTokens": {
+            "coverage": [
+              "mapped"
+            ],
+            "content-kind": [
+              "editorial-unit"
+            ],
+            "formalization": [
+              "current"
+            ],
+            "correspondence": [
+              "scoped"
+            ],
+            "translation": [
+              "current",
+              "unavailable"
+            ]
+          },
+          "structuralTokens": {
+            "lean-level": [
+              "artifact"
+            ],
+            "lean-source": [
+              "dependency"
+            ]
+          }
+        },
+        {
+          "referenceId": "m56leanmodule02",
+          "parentReferenceId": "m56leanartifact02",
+          "kind": "module",
+          "label": "Mathlib.Algebra.Ring.Nat",
+          "order": 0,
+          "state": "mapped",
+          "contentId": "formal:module:Mathlib.Algebra.Ring.Nat",
+          "canonicalRoute": "/formal/module/mathlib/algebra/ring/nat/",
+          "aliases": [
+            "Mathlib/Algebra/Ring/Nat.lean"
+          ],
+          "universalTokens": {
+            "coverage": [
+              "mapped"
+            ],
+            "content-kind": [
+              "editorial-unit"
+            ],
+            "formalization": [
+              "current"
+            ],
+            "correspondence": [
+              "scoped"
+            ],
+            "translation": [
+              "current",
+              "unavailable"
+            ]
+          },
+          "structuralTokens": {
+            "lean-level": [
+              "module"
+            ],
+            "lean-source": [
+              "dependency"
+            ]
+          }
+        },
+        {
+          "referenceId": "m56leandecl0201",
+          "parentReferenceId": "m56leanmodule02",
+          "kind": "declaration",
+          "label": "Nat.instDistrib",
+          "order": 0,
+          "state": "mapped",
+          "contentId": "cnt:p5m56:000004",
+          "canonicalRoute": "/content/p5m56c0004/natural-number-operation-laws/",
+          "aliases": [
+            "FLOC-P2-000006",
+            "Nat.instDistrib"
+          ],
+          "universalTokens": {
+            "coverage": [
+              "mapped"
+            ],
+            "content-kind": [
+              "editorial-unit"
+            ],
+            "formalization": [
+              "current"
+            ],
+            "correspondence": [
+              "scoped"
+            ],
+            "translation": [
+              "current",
+              "unavailable"
+            ]
+          },
+          "structuralTokens": {
+            "lean-level": [
+              "declaration"
+            ],
+            "lean-source": [
+              "dependency"
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

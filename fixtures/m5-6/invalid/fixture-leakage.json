@@ -1,0 +1,11 @@
+{
+  "schema_version": "p5-m56-leakage-probe/v1",
+  "reserved_values": [
+    "urn:fmc:validation:m5-6:onto:parent-a",
+    "urn:fmc:validation:m5-6:onto:parent-b",
+    "FMC-M56-A",
+    "FMC-M56-B",
+    "fmc.m56"
+  ],
+  "expected_error": "fixture_scope_violation"
+}

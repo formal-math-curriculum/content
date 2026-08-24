@@ -1,0 +1,7 @@
+{
+  "schema_version": "p5-m56-mutation/v1",
+  "mutation": "replace",
+  "path": "content.8.route_key",
+  "value": "p5m56c0004",
+  "expected_error": "route_key_collision"
+}

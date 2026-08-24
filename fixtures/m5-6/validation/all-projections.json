@@ -1,0 +1,63 @@
+{
+  "schema_version": "p5-m56-validation-fixture/v1",
+  "classification": "synthetic_contract_fixture",
+  "route": "/validation/m5-6/",
+  "robots": "noindex",
+  "sitemap": false,
+  "global_search": false,
+  "canonical_publication_coverage": false,
+  "fingerprint": "synthetic-m5-6-v1",
+  "subject_content_id": "cnt:p5m56:000004",
+  "projections": [
+    {
+      "id": "course",
+      "placements": [
+        { "reference_id": "m56cr0003", "parent_reference_id": "m56cr0002", "relation": "primary" },
+        { "reference_id": "m56cr0013", "parent_reference_id": "m56cr0012", "relation": "review", "content_id": "cnt:p5m56:000006" }
+      ]
+    },
+    {
+      "id": "ontomathpro",
+      "source_state": "synthetic_current_for_mechanics_only",
+      "placements": [
+        { "external_id": "urn:fmc:validation:m5-6:onto:parent-a", "relation": "broad" },
+        { "external_id": "urn:fmc:validation:m5-6:onto:parent-b", "relation": "related" }
+      ]
+    },
+    {
+      "id": "msc2020",
+      "source_state": "synthetic_current_for_mechanics_only",
+      "placements": [
+        { "external_id": "FMC-M56-A", "relation": "exact" },
+        { "external_id": "FMC-M56-B", "relation": "related" }
+      ]
+    },
+    {
+      "id": "arxiv",
+      "source_state": "synthetic_current_for_mechanics_only",
+      "placements": [
+        { "external_id": "fmc.m56", "relation": "related" }
+      ]
+    },
+    {
+      "id": "lean-mathlib",
+      "source_state": "current_authoritative",
+      "placements": [
+        {
+          "fart_id": "FART-P2-000005",
+          "floc_id": "FLOC-P2-000006",
+          "flink_id": "FLINK-P2-000005",
+          "module": "Mathlib.Algebra.Ring.Nat",
+          "declaration": "Nat.instDistrib"
+        }
+      ]
+    }
+  ],
+  "leakage_guards": [
+    "exclude_from_production_manifest",
+    "exclude_from_global_search",
+    "exclude_from_sitemap",
+    "exclude_from_canonical_metadata",
+    "exclude_from_mapping_coverage_counts"
+  ]
+}
