@@ -10,7 +10,8 @@
   "scripts": {
     "generate": "node scripts/generate-m5-6.mjs",
     "check:generated": "node scripts/generate-m5-6.mjs --check",
-    "validate": "node scripts/validate.mjs fixtures/minimal/manifest.json && node scripts/validate-m5-6.mjs",
+    "validate:m5-8-workflow": "node scripts/validate-m5-8-workflow.mjs source/m5-8/editorial-workflow-policy.json fixtures/m5-8/workflow-cases.json",
+    "validate": "node scripts/validate.mjs fixtures/minimal/manifest.json && node scripts/validate-m5-6.mjs && pnpm run validate:m5-8-workflow",
     "test": "node --test tests/*.test.mjs"
   }
 }
