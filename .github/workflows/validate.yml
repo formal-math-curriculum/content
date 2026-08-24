@@ -17,5 +17,8 @@ jobs:
         with:
           node-version: 24.19.0
           package-manager-cache: false
-      - run: node scripts/validate.mjs fixtures/minimal/manifest.json
-      - run: node --test tests/*.test.mjs
+      - run: corepack enable
+      - run: corepack pnpm --version
+      - run: corepack pnpm validate
+      - run: corepack pnpm test
+      - run: corepack pnpm check:generated
