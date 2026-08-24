@@ -1,0 +1,129 @@
+{
+  "schema_version": "p5-m58-editorial-workflow-policy/v1",
+  "decision_id": "P5-M5.8-OPERATIONS-FREEZE-v1",
+  "issue": "MAT-366",
+  "authority": {
+    "canonical_editorial_repository": "formal-math-curriculum/content",
+    "formal_repository": "formal-math-curriculum/lean",
+    "website_repository": "formal-math-curriculum/formal-math-curriculum.github.io",
+    "governance_system": "Linear",
+    "generated_outputs_are_authority": false,
+    "translations_are_independent_authority": false
+  },
+  "roles": [
+    "canonical_english_author",
+    "mathematical_editorial_reviewer",
+    "semantic_correspondence_reviewer",
+    "translation_author",
+    "translation_reviewer",
+    "classification_alignment_reviewer",
+    "snapshot_licensing_steward",
+    "website_implementer",
+    "release_coordinator",
+    "release_approver"
+  ],
+  "state_machines": {
+    "editorial": {
+      "states": ["draft", "in_review", "current_reviewed", "stale", "deprecated", "withdrawn"],
+      "transitions": [
+        ["draft", "in_review"],
+        ["in_review", "current_reviewed"],
+        ["current_reviewed", "in_review"],
+        ["current_reviewed", "stale"],
+        ["stale", "in_review"],
+        ["current_reviewed", "deprecated"],
+        ["stale", "deprecated"],
+        ["draft", "withdrawn"],
+        ["in_review", "withdrawn"],
+        ["current_reviewed", "withdrawn"],
+        ["stale", "withdrawn"],
+        ["deprecated", "withdrawn"]
+      ]
+    },
+    "formal_correspondence": {
+      "states": ["exact", "scoped", "related", "unreviewed", "unavailable", "stale", "incompatible"],
+      "reviewed_states": ["exact", "scoped", "related"],
+      "transitions": [
+        ["unreviewed", "exact"],
+        ["unreviewed", "scoped"],
+        ["unreviewed", "related"],
+        ["unavailable", "unreviewed"],
+        ["exact", "stale"],
+        ["scoped", "stale"],
+        ["related", "stale"],
+        ["stale", "exact"],
+        ["stale", "scoped"],
+        ["stale", "related"],
+        ["stale", "incompatible"],
+        ["unreviewed", "incompatible"]
+      ]
+    },
+    "translation": {
+      "states": ["draft", "current_reviewed", "stale", "unavailable"],
+      "transitions": [
+        ["unavailable", "draft"],
+        ["draft", "current_reviewed"],
+        ["current_reviewed", "stale"],
+        ["stale", "draft"],
+        ["stale", "current_reviewed"],
+        ["draft", "unavailable"],
+        ["stale", "unavailable"]
+      ],
+      "canonical_locale": "en",
+      "fallback_locale": "en",
+      "future_locales": ["pt"],
+      "automatic_locale_negotiation": false,
+      "stale_hreflang_eligible": false
+    },
+    "alignment": {
+      "systems": ["ontomathpro", "msc2020", "arxiv"],
+      "coverage_states": ["mapped", "partially_mapped", "unmapped", "not_applicable", "needs_review"],
+      "relations": ["exact", "broad", "narrow", "related"],
+      "snapshot_states": ["current", "stale", "unavailable", "license_needs_review", "incompatible"]
+    },
+    "publication": {
+      "states": ["draft", "candidate_not_deployed", "release_approved", "published", "superseded", "rolled_back"],
+      "transitions": [
+        ["draft", "candidate_not_deployed"],
+        ["candidate_not_deployed", "release_approved"],
+        ["release_approved", "published"],
+        ["published", "superseded"],
+        ["published", "rolled_back"]
+      ],
+      "deployment_authorized": false
+    }
+  },
+  "attribution": {
+    "required": true,
+    "canonical_source_revision_format": "sha256",
+    "source_references_required": true,
+    "contributor_actor_ids_required": true
+  },
+  "review_rules": {
+    "current_editorial_requires_distinct_reviewer": true,
+    "current_translation_requires_distinct_reviewer": true,
+    "reviewed_correspondence_requires_distinct_reviewer": true,
+    "mapped_alignment_requires_distinct_reviewer": true,
+    "compilation_is_semantic_review": false,
+    "synthetic_fixture_may_establish_coverage": false
+  },
+  "change_families": [
+    "editorial",
+    "semantic_correspondence",
+    "translation",
+    "classification_alignment",
+    "generated_mirror",
+    "publication_candidate"
+  ],
+  "fact_family_repositories": {
+    "editorial": "formal-math-curriculum/content",
+    "semantic_correspondence": "formal-math-curriculum/content",
+    "translation": "formal-math-curriculum/content",
+    "classification_alignment": "formal-math-curriculum/content",
+    "formal_source": "formal-math-curriculum/lean",
+    "formal_traceability": "formal-math-curriculum/lean",
+    "website_adapter": "formal-math-curriculum/formal-math-curriculum.github.io"
+  },
+  "required_exact_bases": ["content", "lean", "site", "mathlib"],
+  "deployment_authorized": false
+}

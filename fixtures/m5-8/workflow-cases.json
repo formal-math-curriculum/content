@@ -1,0 +1,219 @@
+{
+  "schema_version": "p5-m58-workflow-cases/v1",
+  "cases": [
+    {
+      "id": "W01-valid-reviewed-change",
+      "expected": "pass",
+      "packet": {
+        "schema_version": "p5-m58-change-packet/v1",
+        "issue": "MAT-366",
+        "change_id": "m58-valid-reviewed-change",
+        "exact_bases": {
+          "content": "2da8fdb43074d00fea5fc6201d239e5f26a43250",
+          "lean": "3f1a315f438af37a327eaf8b9b9c1dbc6f409394",
+          "site": "1533b529fc2d7513fc51cdd28182f2a5eca65279",
+          "mathlib": "db584cd6d46c92f209a44c0f1c829460d327499d"
+        },
+        "actors": [
+          { "actor_id": "author-a", "roles": ["canonical_english_author", "translation_author"] },
+          { "actor_id": "reviewer-math", "roles": ["mathematical_editorial_reviewer"] },
+          { "actor_id": "reviewer-semantic", "roles": ["semantic_correspondence_reviewer"] },
+          { "actor_id": "reviewer-translation", "roles": ["translation_reviewer"] },
+          { "actor_id": "reviewer-alignment", "roles": ["classification_alignment_reviewer"] },
+          { "actor_id": "release-coordinator", "roles": ["release_coordinator"] }
+        ],
+        "attribution": {
+          "source_references": ["src:p4:release-v1"],
+          "contributor_actor_ids": ["author-a", "reviewer-math", "reviewer-semantic", "reviewer-translation", "reviewer-alignment", "release-coordinator"]
+        },
+        "change_families": ["editorial", "semantic_correspondence", "translation", "classification_alignment", "generated_mirror", "publication_candidate"],
+        "authority_mutations": [
+          { "fact_family": "editorial", "repository": "formal-math-curriculum/content" },
+          { "fact_family": "semantic_correspondence", "repository": "formal-math-curriculum/content" },
+          { "fact_family": "translation", "repository": "formal-math-curriculum/content" },
+          { "fact_family": "classification_alignment", "repository": "formal-math-curriculum/content" }
+        ],
+        "editorial_changes": [
+          { "content_id": "cnt:p5m56:000009", "from": "in_review", "to": "current_reviewed", "author_id": "author-a", "reviewer_id": "reviewer-math", "review_decision": "approved", "source_refs": ["src:p4:release-v1"], "result_source_sha256": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb" }
+        ],
+        "semantic_reviews": [
+          { "content_id": "cnt:p5m56:000009", "block_id": "blk.sign-rule", "from": "unreviewed", "to": "exact", "author_id": "author-a", "reviewer_id": "reviewer-semantic", "review_decision": "approved", "fart_id": "FART-P2-000006", "floc_id": "FLOC-P2-000006", "flink_id": "FLINK-P2-000006", "project_revision": "3f1a315f438af37a327eaf8b9b9c1dbc6f409394", "dependency_revision": "db584cd6d46c92f209a44c0f1c829460d327499d", "rendered_sha256": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc", "latex_sha256": "dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd", "compilation_only": false }
+        ],
+        "translation_changes": [
+          { "content_id": "cnt:p5m56:000009", "locale": "pt", "from": "draft", "to": "current_reviewed", "canonical_source_revision": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb", "translation_source_revision": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb", "author_id": "author-a", "reviewer_id": "reviewer-translation", "review_decision": "approved", "fallback_locale": "en", "automatic_locale_negotiation": false, "hreflang_eligible": true, "localized_route_eligible": true, "sitemap_eligible": true }
+        ],
+        "alignment_changes": [
+          { "content_id": "cnt:p5m56:000009", "system": "arxiv", "coverage_state": "needs_review", "snapshot_state": "unavailable", "synthetic_fixture": false }
+        ],
+        "generated_outputs": [
+          { "path": "generated/m5-6/publication.json", "source_paths": ["source/m5-6/slice.json"], "generator_path": "scripts/generate-m5-6.mjs", "generator_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", "hand_edited": false }
+        ],
+        "publication_changes": [
+          { "candidate_id": "P5-M5.8-CANDIDATE-v1", "from": "draft", "to": "candidate_not_deployed", "coordinator_id": "release-coordinator", "candidate_selector": "validation/m5-8-current.json", "preview_only": true }
+        ],
+        "deployment_authorized": false
+      }
+    },
+    {
+      "id": "W02-valid-stale-translation",
+      "expected": "pass",
+      "packet": {
+        "schema_version": "p5-m58-change-packet/v1",
+        "issue": "MAT-366",
+        "change_id": "m58-stale-translation",
+        "exact_bases": { "content": "2da8fdb43074d00fea5fc6201d239e5f26a43250", "lean": "3f1a315f438af37a327eaf8b9b9c1dbc6f409394", "site": "1533b529fc2d7513fc51cdd28182f2a5eca65279", "mathlib": "db584cd6d46c92f209a44c0f1c829460d327499d" },
+        "actors": [{ "actor_id": "translator", "roles": ["translation_author"] }],
+        "attribution": { "source_references": ["src:canonical"], "contributor_actor_ids": ["translator"] },
+        "change_families": ["translation"],
+        "authority_mutations": [{ "fact_family": "translation", "repository": "formal-math-curriculum/content" }],
+        "translation_changes": [{ "content_id": "cnt:p5m56:000009", "locale": "pt", "from": "current_reviewed", "to": "stale", "canonical_source_revision": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb", "translation_source_revision": "1111111111111111111111111111111111111111111111111111111111111111", "review_decision": "pending", "fallback_locale": "en", "automatic_locale_negotiation": false, "hreflang_eligible": false, "localized_route_eligible": true, "sitemap_eligible": true, "freshness_disclosure": "Translation trails the current English source." }],
+        "deployment_authorized": false
+      }
+    },
+    {
+      "id": "W03-self-review",
+      "expected": "fail",
+      "error_includes": "requires a distinct reviewer",
+      "packet": {
+        "schema_version": "p5-m58-change-packet/v1", "issue": "MAT-366", "change_id": "self-review",
+        "exact_bases": { "content": "2da8fdb43074d00fea5fc6201d239e5f26a43250", "lean": "3f1a315f438af37a327eaf8b9b9c1dbc6f409394", "site": "1533b529fc2d7513fc51cdd28182f2a5eca65279", "mathlib": "db584cd6d46c92f209a44c0f1c829460d327499d" },
+        "actors": [{ "actor_id": "same", "roles": ["canonical_english_author", "mathematical_editorial_reviewer"] }],
+        "change_families": ["editorial"],
+        "editorial_changes": [{ "content_id": "cnt:test", "from": "in_review", "to": "current_reviewed", "author_id": "same", "reviewer_id": "same", "review_decision": "approved", "source_refs": ["src:test"] }],
+        "deployment_authorized": false
+      }
+    },
+    {
+      "id": "W04-stale-source-marked-current",
+      "expected": "fail",
+      "error_includes": "state must be stale",
+      "packet": {
+        "schema_version": "p5-m58-change-packet/v1", "issue": "MAT-366", "change_id": "stale-current",
+        "exact_bases": { "content": "2da8fdb43074d00fea5fc6201d239e5f26a43250", "lean": "3f1a315f438af37a327eaf8b9b9c1dbc6f409394", "site": "1533b529fc2d7513fc51cdd28182f2a5eca65279", "mathlib": "db584cd6d46c92f209a44c0f1c829460d327499d" },
+        "actors": [{ "actor_id": "translator", "roles": ["translation_author"] }, { "actor_id": "reviewer", "roles": ["translation_reviewer"] }],
+        "change_families": ["translation"],
+        "translation_changes": [{ "content_id": "cnt:test", "locale": "pt", "from": "draft", "to": "current_reviewed", "canonical_source_revision": "2da8fdb43074d00fea5fc6201d239e5f26a43250", "translation_source_revision": "1111111111111111111111111111111111111111", "author_id": "translator", "reviewer_id": "reviewer", "review_decision": "approved", "hreflang_eligible": true }],
+        "deployment_authorized": false
+      }
+    },
+    {
+      "id": "W05-nearby-lean-without-traceability",
+      "expected": "fail",
+      "error_includes": "missing exact fart_id",
+      "packet": {
+        "schema_version": "p5-m58-change-packet/v1", "issue": "MAT-366", "change_id": "nearby-lean",
+        "exact_bases": { "content": "2da8fdb43074d00fea5fc6201d239e5f26a43250", "lean": "3f1a315f438af37a327eaf8b9b9c1dbc6f409394", "site": "1533b529fc2d7513fc51cdd28182f2a5eca65279", "mathlib": "db584cd6d46c92f209a44c0f1c829460d327499d" },
+        "actors": [{ "actor_id": "author", "roles": ["canonical_english_author"] }, { "actor_id": "reviewer", "roles": ["semantic_correspondence_reviewer"] }],
+        "change_families": ["semantic_correspondence"],
+        "semantic_reviews": [{ "content_id": "cnt:test", "block_id": "blk:test", "from": "unreviewed", "to": "exact", "author_id": "author", "reviewer_id": "reviewer", "review_decision": "approved", "project_revision": "3f1a315f438af37a327eaf8b9b9c1dbc6f409394", "dependency_revision": "db584cd6d46c92f209a44c0f1c829460d327499d", "compilation_only": true }],
+        "deployment_authorized": false
+      }
+    },
+    {
+      "id": "W06-synthetic-mapping-claim",
+      "expected": "fail",
+      "error_includes": "synthetic fixture cannot establish coverage",
+      "packet": {
+        "schema_version": "p5-m58-change-packet/v1", "issue": "MAT-366", "change_id": "synthetic-map",
+        "exact_bases": { "content": "2da8fdb43074d00fea5fc6201d239e5f26a43250", "lean": "3f1a315f438af37a327eaf8b9b9c1dbc6f409394", "site": "1533b529fc2d7513fc51cdd28182f2a5eca65279", "mathlib": "db584cd6d46c92f209a44c0f1c829460d327499d" },
+        "actors": [{ "actor_id": "author", "roles": ["canonical_english_author"] }, { "actor_id": "reviewer", "roles": ["classification_alignment_reviewer"] }],
+        "change_families": ["classification_alignment"],
+        "alignment_changes": [{ "content_id": "cnt:test", "system": "msc2020", "coverage_state": "mapped", "snapshot_state": "current", "synthetic_fixture": true, "license_qualified": true, "relation": "exact", "external_id": "03B05", "snapshot_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", "author_id": "author", "reviewer_id": "reviewer", "review_decision": "approved" }],
+        "deployment_authorized": false
+      }
+    },
+    {
+      "id": "W07-wrong-authority-repository",
+      "expected": "fail",
+      "error_includes": "wrong authority repository for editorial",
+      "packet": {
+        "schema_version": "p5-m58-change-packet/v1", "issue": "MAT-366", "change_id": "wrong-authority",
+        "exact_bases": { "content": "2da8fdb43074d00fea5fc6201d239e5f26a43250", "lean": "3f1a315f438af37a327eaf8b9b9c1dbc6f409394", "site": "1533b529fc2d7513fc51cdd28182f2a5eca65279", "mathlib": "db584cd6d46c92f209a44c0f1c829460d327499d" },
+        "actors": [{ "actor_id": "author", "roles": ["canonical_english_author"] }],
+        "change_families": ["editorial"],
+        "authority_mutations": [{ "fact_family": "editorial", "repository": "formal-math-curriculum/formal-math-curriculum.github.io" }],
+        "deployment_authorized": false
+      }
+    },
+    {
+      "id": "W08-hand-edited-generated-output",
+      "expected": "fail",
+      "error_includes": "cannot be hand edited",
+      "packet": {
+        "schema_version": "p5-m58-change-packet/v1", "issue": "MAT-366", "change_id": "hand-edit",
+        "exact_bases": { "content": "2da8fdb43074d00fea5fc6201d239e5f26a43250", "lean": "3f1a315f438af37a327eaf8b9b9c1dbc6f409394", "site": "1533b529fc2d7513fc51cdd28182f2a5eca65279", "mathlib": "db584cd6d46c92f209a44c0f1c829460d327499d" },
+        "actors": [{ "actor_id": "author", "roles": ["canonical_english_author"] }],
+        "change_families": ["generated_mirror"],
+        "generated_outputs": [{ "path": "generated/m5-6/publication.json", "source_paths": ["source/m5-6/slice.json"], "generator_path": "scripts/generate-m5-6.mjs", "generator_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", "hand_edited": true }],
+        "deployment_authorized": false
+      }
+    },
+    {
+      "id": "W09-missing-exact-base",
+      "expected": "fail",
+      "error_includes": "missing or invalid exact base: site",
+      "packet": {
+        "schema_version": "p5-m58-change-packet/v1", "issue": "MAT-366", "change_id": "missing-base",
+        "exact_bases": { "content": "2da8fdb43074d00fea5fc6201d239e5f26a43250", "lean": "3f1a315f438af37a327eaf8b9b9c1dbc6f409394", "mathlib": "db584cd6d46c92f209a44c0f1c829460d327499d" },
+        "actors": [{ "actor_id": "author", "roles": ["canonical_english_author"] }],
+        "change_families": ["editorial"],
+        "deployment_authorized": false
+      }
+    },
+    {
+      "id": "W10-incompatible-packet-schema",
+      "expected": "fail",
+      "error_includes": "unknown change packet schema",
+      "packet": {
+        "schema_version": "p5-m58-change-packet/v2", "issue": "MAT-366", "change_id": "future-schema",
+        "exact_bases": { "content": "2da8fdb43074d00fea5fc6201d239e5f26a43250", "lean": "3f1a315f438af37a327eaf8b9b9c1dbc6f409394", "site": "1533b529fc2d7513fc51cdd28182f2a5eca65279", "mathlib": "db584cd6d46c92f209a44c0f1c829460d327499d" },
+        "actors": [{ "actor_id": "author", "roles": ["canonical_english_author"] }],
+        "change_families": ["editorial"],
+        "deployment_authorized": false
+      }
+    },
+    {
+      "id": "W11-valid-unavailable-translation",
+      "expected": "pass",
+      "packet": {
+        "schema_version": "p5-m58-change-packet/v1", "issue": "MAT-366", "change_id": "translation-unavailable",
+        "exact_bases": { "content": "2da8fdb43074d00fea5fc6201d239e5f26a43250", "lean": "3f1a315f438af37a327eaf8b9b9c1dbc6f409394", "site": "1533b529fc2d7513fc51cdd28182f2a5eca65279", "mathlib": "db584cd6d46c92f209a44c0f1c829460d327499d" },
+        "actors": [{ "actor_id": "translator", "roles": ["translation_author"] }],
+        "attribution": { "source_references": ["src:canonical"], "contributor_actor_ids": ["translator"] },
+        "change_families": ["translation"],
+        "authority_mutations": [{ "fact_family": "translation", "repository": "formal-math-curriculum/content" }],
+        "translation_changes": [{ "content_id": "cnt:test", "locale": "pt", "from": "draft", "to": "unavailable", "canonical_source_revision": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb", "translation_source_revision": null, "review_decision": "pending", "hreflang_eligible": false, "localized_route_eligible": false, "sitemap_eligible": false }],
+        "deployment_authorized": false
+      }
+    },
+    {
+      "id": "W12-valid-deprecation-with-lineage",
+      "expected": "pass",
+      "packet": {
+        "schema_version": "p5-m58-change-packet/v1", "issue": "MAT-366", "change_id": "deprecated-with-lineage",
+        "exact_bases": { "content": "2da8fdb43074d00fea5fc6201d239e5f26a43250", "lean": "3f1a315f438af37a327eaf8b9b9c1dbc6f409394", "site": "1533b529fc2d7513fc51cdd28182f2a5eca65279", "mathlib": "db584cd6d46c92f209a44c0f1c829460d327499d" },
+        "actors": [{ "actor_id": "author", "roles": ["canonical_english_author"] }],
+        "attribution": { "source_references": ["src:deprecation-decision"], "contributor_actor_ids": ["author"] },
+        "change_families": ["editorial"],
+        "authority_mutations": [{ "fact_family": "editorial", "repository": "formal-math-curriculum/content" }],
+        "editorial_changes": [{ "content_id": "cnt:test", "from": "current_reviewed", "to": "deprecated", "author_id": "author", "reason": "Superseded treatment", "replacement_or_recovery": "cnt:replacement", "effective_revision": "2da8fdb43074d00fea5fc6201d239e5f26a43250" }],
+        "deployment_authorized": false
+      }
+    },
+    {
+      "id": "W13-material-change-without-revalidation",
+      "expected": "fail",
+      "error_includes": "material change requires dependent revalidation records",
+      "packet": {
+        "schema_version": "p5-m58-change-packet/v1", "issue": "MAT-366", "change_id": "missing-revalidation",
+        "exact_bases": { "content": "2da8fdb43074d00fea5fc6201d239e5f26a43250", "lean": "3f1a315f438af37a327eaf8b9b9c1dbc6f409394", "site": "1533b529fc2d7513fc51cdd28182f2a5eca65279", "mathlib": "db584cd6d46c92f209a44c0f1c829460d327499d" },
+        "actors": [{ "actor_id": "author", "roles": ["canonical_english_author"] }],
+        "attribution": { "source_references": ["src:change"], "contributor_actor_ids": ["author"] },
+        "change_families": ["editorial"],
+        "authority_mutations": [{ "fact_family": "editorial", "repository": "formal-math-curriculum/content" }],
+        "editorial_changes": [{ "content_id": "cnt:test", "from": "current_reviewed", "to": "in_review", "author_id": "author", "material_change": true }],
+        "deployment_authorized": false
+      }
+    }
+  ]
+}
